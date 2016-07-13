@@ -461,6 +461,15 @@ a:hover{
 		font-size: 18px;
 		line-height: 18px;
 	}
+	#main.team-main {
+		width: 100%;
+	}
+
+}
+@media (min-width: 1200px) and (max-width: 1300pc){
+	#main.team-main {
+		width: 53%;
+	}
 }
 
 /*Mobile Version*/
@@ -531,6 +540,7 @@ a:hover{
 	.detail-content {
 		font-size: 13px;
 	}
+
 }
 
 .breadcrumbs .previous-page{
@@ -557,6 +567,9 @@ a:hover{
 	content: "\f139";
 }
 /*top hexgon block*/
+.hexagon {
+	display: block;
+}
 .user-iocn .hexagon {
   position: relative;
   width: 45px; 
@@ -567,6 +580,7 @@ a:hover{
   background-position: center;
   border-left: solid 2px #f89728;
   border-right: solid 2px #f89728;
+  display: block;
 }
 
 .user-iocn .hexTop,
@@ -581,6 +595,7 @@ a:hover{
   transform: scaleY(0.5774) rotate(-45deg);
   background: inherit;
   left: 4.2px;
+  display: inline-block;
 }
 /*counter transform the bg image on the caps*/
 .user-iocn .hexTop:after,
@@ -802,6 +817,7 @@ a.questions-date {
 .team-members {
 	position: relative;
 	width: 184px;
+	margin: 0px auto;
 }
 .team-wrapper {
 	position: relative;
@@ -988,4 +1004,63 @@ a.questions-date {
     transform: skew(21deg);
     -webkit-transform: skew(21deg);
     -ms-transform: skew(21deg);
+}
+@media (max-width:767px){
+	.tab-content2 {
+		height: auto;
+	}
+	/*     team pages responsive styles      */
+
+
+	.team-section .page-tab-section .multi-tab-section .tab-menu2 li a:hover::after,
+	 .team-section .page-tab-section .multi-tab-section .tab-menu2 li.active-tab a::after {
+		transform: skew(22deg) !important;
+	}
+	.team-section .page-tab-section .multi-tab-section .tab-menu2 li a:hover, 
+	.team-section .page-tab-section .multi-tab-section .tab-menu2 li.active-tab a {
+		font-size: 12px;
+	}
+	.page-tab-section .tab-menu li a, .page-tab-section .tab-menu2 li a {
+		font-size: 12px;
+	}
+	.page-tab-section .tab-menu li a, .page-tab-section .tab-menu2 li a {
+		font-size: 12px;
+	}
+	.team-section .page-tab-section .tab-menu li a:hover::after,
+	.team-section .page-tab-section .tab-menu li.active-tab a::after,
+	.team-section .page-tab-section .tab-menu2 li a:hover::after,
+	.team-section .page-tab-section .tab-menu2 li.active-tab a::after {
+		width: 90%;
+	}
+	.date-text {
+		position: absolute;
+		right: 0;
+		top: 8px;
+	}
+	.team-footer {
+		position: relative !important;
+	}
+	.tab-content2 {
+		height: auto !important;
+	}
+	#tab6 .column.large-4.medium-4.small-12  {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+}
+@media (max-width:479px){
+	.team-section .page-tab-section .multi-tab-section .tab-menu2 li a:hover, 
+	.team-section .page-tab-section .multi-tab-section .tab-menu2 li.active-tab a {
+		font-size: 8px;
+	}
+	.page-tab-section .tab-menu2 li a {
+		font-size: 8px;
+	}
+	.team-section .page-tab-section .tab-menu li a:hover::after, 
+	.team-section .page-tab-section .tab-menu li.active-tab a::after {
+		width: 74%;
+	}
+	.left-questionsblogs p br {
+		display: none;
+	}
 }
