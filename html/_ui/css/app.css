@@ -1,4 +1,4 @@
-﻿
+
 /* ==========================================================================
    Common CSS
    ========================================================================== */
@@ -300,6 +300,20 @@ a:hover{
 	color: #fff;
 	text-decoration: none;
 }
+
+/* disabling the bottom menu */
+
+/*.team-section .page-tab-section .tab-menu2 li.disabled,
+.team-section .page-tab-section .tab-menu2 li.disabled a,
+.team-section .page-tab-section .tab-menu2 li.disabled a:hover,
+.team-section .page-tab-section .tab-menu2 li.disabled a:hover:after, 
+.team-section .page-tab-section .tab-menu2 li.disabled a::after{
+    background: #fff;
+    color: lightgray;
+    transform: none;
+	-webkit-transform: none;
+	-moz-transform: none;
+}*/
 .tabs-content-wrp{
 	float: left;
 	width: 100%;
@@ -692,10 +706,12 @@ a:hover{
 	-webkit-transform: skew(42deg);
 	-moz-transform: skew(42deg);
 }
+
 .team-section .page-tab-section .multi-tab-section .tab-menu2 li a:hover, 
 .team-section .page-tab-section .multi-tab-section .tab-menu2 li.active-tab a {
 	color: #fff;
 }
+
 .multi-tab-section {
   float: left;
   width: 100%;
