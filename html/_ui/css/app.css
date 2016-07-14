@@ -301,9 +301,15 @@ a:hover{
 	text-decoration: none;
 }
 
+#tab-selected{
+    background-color: #ea094b;
+    color: #fff;
+	text-decoration: none;
+}
+
 /* disabling the bottom menu */
 
-/*.team-section .page-tab-section .tab-menu2 li.disabled,
+.team-section .page-tab-section .tab-menu2 li.disabled,
 .team-section .page-tab-section .tab-menu2 li.disabled a,
 .team-section .page-tab-section .tab-menu2 li.disabled a:hover,
 .team-section .page-tab-section .tab-menu2 li.disabled a:hover:after, 
@@ -313,7 +319,7 @@ a:hover{
     transform: none;
 	-webkit-transform: none;
 	-moz-transform: none;
-}*/
+}
 .tabs-content-wrp{
 	float: left;
 	width: 100%;
@@ -686,6 +692,27 @@ a:hover{
     margin: 0 auto;
     z-index: -1;
 }
+
+/* class for ON CLICK EVENT */
+li a .selected {
+	content: "";
+	display: inline-block;
+    height: 35px; 
+    -webkit-transform: skew(-42deg); 
+    -moz-transform: skew(-42deg); 
+    transform: skew(-42deg);
+    border: 2px solid #db0059;
+    background-color: #db0059;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1;
+}
+
 .team-section .page-tab-section .tab-menu {
   border-bottom-color: #db0059;
 }
@@ -710,6 +737,20 @@ a:hover{
 .team-section .page-tab-section .multi-tab-section .tab-menu2 li a:hover, 
 .team-section .page-tab-section .multi-tab-section .tab-menu2 li.active-tab a {
 	color: #fff;
+}
+
+/* disabling the bottom menu */
+
+.team-section .page-tab-section .tab-menu2 li.disabled,
+.team-section .page-tab-section .tab-menu2 li.disabled a,
+.team-section .page-tab-section .tab-menu2 li.disabled a:hover,
+.team-section .page-tab-section .tab-menu2 li.disabled a:hover:after, 
+.team-section .page-tab-section .tab-menu2 li.disabled a::after{
+    background: #fff;
+    color: lightgray;
+    transform: none;
+	-webkit-transform: none;
+	-moz-transform: none;
 }
 
 .multi-tab-section {

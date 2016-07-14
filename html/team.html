@@ -59,20 +59,29 @@
                       <div id="tabs-section">
                         <div class="column large-12 medium-12 small-12">
                               <ul class="tab-menu">
-                                  <li ><a href="#tab1">5 Projects</a></li>
+                                  <div id="links">
+                                  <li><a href="#tab1" id="links">5 Projects</a></li>
                                   <li class="active-tab"><a href="#tab2">Activity</a></li>
                                   <li><a href="#tab3">Portfolio</a></li>
+                                </div>
                               </ul>
                           </div>
+                                <script>
+                                $('document').ready(function() { 
+                                    $(#links").click(function(){
+                                        ($this).addClass("selected");
+                                      });
+                                });
+                                </script>
                           <div class="tabs-content-wrp">
                               
                               <!-- 5 PROJECTS TAB-->
-                              <section class="tab-content" id="tab1">
-                                  <div class="multi-tab-section">
+                              <section class="tab-content1 selected" id="tab1">
+                                  <div class="multi-tab-section" >
                                   <div id="tabs-section2">
                                     <div class="column large-12 medium-12 small-12">
-                                      <ul class="tab-menu2">
-                                        <li class="disabled"><a href=#>Questions</a></li>
+                                      <ul class="tab-menu2" >
+                                         <li class="disabled"><a href="#">Questions</a></li>
                                         <li class="disabled"><a href="#">Replies</a></li>
                                         <li class="disabled"><a href="#">Teams</a></li>
                                         <li class="disabled"><a href="#">Help Requests</a></li>
@@ -434,10 +443,10 @@
                                   <div id="tabs-section2">
                                   <div class="column large-12 medium-12 small-12">
                                       <ul class="tab-menu2">
-                                        <li class="active-tab"><a href="#tab4">Questions</a></li>
-                                        <li><a href="#tab5">Replies</a></li>
-                                        <li><a href="#tab6">Teams</a></li>
-                                        <li><a href="#tab7">Help Requests</a></li>
+                                        <li class="disabled"><a href="#">Questions</a></li>
+                                        <li class="disabled"><a href="#">Replies</a></li>
+                                        <li class="disabled"><a href="#">Teams</a></li>
+                                        <li class="disabled"><a href="#">Help Requests</a></li>
                                       </ul>
                                     </div>
                                   <div class="column large-4 medium-4 small-6">
