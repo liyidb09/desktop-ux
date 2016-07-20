@@ -687,27 +687,6 @@ a:hover{
     z-index: -1;
 }
 
-/*      filling in background color of tabs on top menu */
-.team-section .page-tab-section .tab-menu li.selected-tab a,{
-   content: "";
-	display: inline-block;
-    height: 35px; 
-    -webkit-transform: skew(-42deg); 
-    -moz-transform: skew(-42deg); 
-    transform: skew(-42deg);
-    background: #db0059;
-    border: 2px solid #db0059;
-    color: #fff;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 80%;
-    right: 0;
-    margin: 0 auto;
-    z-index: -1; 
-}
-
-
 .team-section .page-tab-section .tab-menu {
   border-bottom-color: #db0059;
 }
