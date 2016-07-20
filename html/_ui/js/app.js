@@ -29,8 +29,6 @@ $('.tab-menu li a').click(function(e){
 	$(currentAttrValue).fadeIn().css({'visibility':'visible','height':'auto'});
 
 })
-
-
 // Tab ending
 $('.tab-content2').css({'display':'none'});
 $('.tab-content2').eq(0).css({'display':'block','height':'auto'});
@@ -58,6 +56,12 @@ $('.thumbnailimg').click(function(){
 	//},500)
 	
 })
+
+
+
+
+
+
 
 
 

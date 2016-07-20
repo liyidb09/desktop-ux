@@ -302,7 +302,6 @@ a:hover{
 }
 
 /* disabling the bottom menu */
-
 .team-section .page-tab-section .tab-menu2 li.disabled,
 .team-section .page-tab-section .tab-menu2 li.disabled a,
 .team-section .page-tab-section .tab-menu2 li.disabled a:hover,
@@ -314,6 +313,7 @@ a:hover{
 	-webkit-transform: none;
 	-moz-transform: none;
 }
+
 .tabs-content-wrp{
 	float: left;
 	width: 100%;
@@ -663,7 +663,7 @@ a:hover{
     background: #fff;
     color: #000;
     position: relative;
-    z-index: -2;
+    z-index: 2;
 }
 .team-section .page-tab-section .tab-menu li a:hover:after, 
 .team-section .page-tab-section .tab-menu li.active-tab a:after,
@@ -686,7 +686,6 @@ a:hover{
     margin: 0 auto;
     z-index: -1;
 }
-
 .team-section .page-tab-section .tab-menu {
   border-bottom-color: #db0059;
 }
@@ -713,8 +712,6 @@ a:hover{
 	color: #fff;
 }
 
-/* disabling the bottom menu */
-
 .team-section .page-tab-section .tab-menu2 li.disabled,
 .team-section .page-tab-section .tab-menu2 li.disabled a,
 .team-section .page-tab-section .tab-menu2 li.disabled a:hover,
@@ -726,7 +723,6 @@ a:hover{
 	-webkit-transform: none;
 	-moz-transform: none;
 }
-
 .multi-tab-section {
   float: left;
   width: 100%;
