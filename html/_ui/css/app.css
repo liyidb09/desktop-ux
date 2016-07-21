@@ -715,7 +715,7 @@ a:hover{
 .team-section .page-tab-section .tab-menu2 li.disabled,
 .team-section .page-tab-section .tab-menu2 li.disabled a,
 .team-section .page-tab-section .tab-menu2 li.disabled a:hover,
-.team-section .page-tab-section .tab-menu2 li.disabled a:hover:after, 
+.team-section .page-tab-section .tab-menu2 li.disabled a:hover::after, 
 .team-section .page-tab-section .tab-menu2 li.disabled a::after{
     background: #fff;
     color: lightgray;

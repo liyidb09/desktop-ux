@@ -34,12 +34,13 @@ $('.tab-content2').css({'display':'none'});
 $('.tab-content2').eq(0).css({'display':'block','height':'auto'});
 $('.tab-menu2 li a').click(function(e){
 	e.preventDefault();
-	var currentAttrValue = $(this).attr('href');
-	$('.tab-menu2 li').removeClass('active-tab');
-	$(this).parent().addClass('active-tab');
-	$('.tab-content2').fadeOut().css({'display':'none','height':'0','padding':'0'});
-	$(currentAttrValue).fadeIn().css({'display':'block','height':'auto'});
-
+	var currentAttrValue = $(this).attr('href'); 
+    $('.tab-menu2 li').removeClass('active-tab');
+    if(!$(this).parent().hasClass('disabled')){
+        $(this).parent().addClass('active-tab');
+        $('.tab-content2').fadeOut().css({'display':'none','height':'0','padding':'0'});
+        $(currentAttrValue).fadeIn().css({'display':'block','height':'auto'});
+    }
 })
 
 $('.tab-menu li').eq(1).find('a').trigger('click');
