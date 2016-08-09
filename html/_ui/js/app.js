@@ -5,13 +5,26 @@ $(document).foundation({
 });
 
 // mobile sub menu
+$(window).resize(function(){
+	 if($(window).width()<767){
+	 	//$(".dropdown-menu").removeAttr('style');
+	 	//$(".dropdown-menu").removeStyle('display');
+		$(".submenu").click(function(e){
+			e.preventDefault();
 
-if($(window).width()<768){
-	$(".submenu").click(function(){
+			$(this).toggleClass('active-submenu');
+	        $(this).next().slideToggle();
+	    });
+	}
+
+})
+if($(window).width()<767){
+	$(".submenu").click(function(e){
+		e.preventDefault();
 		$(this).toggleClass('active-submenu')
-        $(".dropdown-menu").slideToggle();
+        $(this).next().slideToggle();
     });
-};
+}
 $(".expand-social-links").click(function(){
 	$(this).toggleClass('active-expanded')
 	$(".social-logos").slideToggle();
@@ -34,13 +47,12 @@ $('.tab-content2').css({'display':'none'});
 $('.tab-content2').eq(0).css({'display':'block','height':'auto'});
 $('.tab-menu2 li a').click(function(e){
 	e.preventDefault();
-	var currentAttrValue = $(this).attr('href'); 
-    $('.tab-menu2 li').removeClass('active-tab');
-    if(!$(this).parent().hasClass('disabled')){
-        $(this).parent().addClass('active-tab');
-        $('.tab-content2').fadeOut().css({'display':'none','height':'0','padding':'0'});
-        $(currentAttrValue).fadeIn().css({'display':'block','height':'auto'});
-    }
+	var currentAttrValue = $(this).attr('href');
+	$('.tab-menu2 li').removeClass('active-tab');
+	$(this).parent().addClass('active-tab');
+	$('.tab-content2').fadeOut().css({'display':'none','height':'0','padding':'0'});
+	$(currentAttrValue).fadeIn().css({'display':'block','height':'auto'});
+
 })
 
 $('.tab-menu li').eq(1).find('a').trigger('click');
@@ -59,15 +71,57 @@ $('.thumbnailimg').click(function(){
 })
 
 
+// slider homev1 screen
+$('.slider-v1screen, .slider-v1screen2').slick({
+
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: true
+
+      }
+    },
+    {
+      breakpoint: 979,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 639,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
 
 
 
-
-
-
-
-
-
-
+$(document).ready(function() {
+	$(".toggle").click(function(e){
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$(".right-block").slideToggle();
+	});	
+	$(window).resize(function(){
+      var w = $(window).width();
+      if(w > 320 && $('.right-block').is(':hidden')) {
+          $('.right-block').removeAttr('style');
+    }
+});
+});
 
 
