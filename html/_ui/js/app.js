@@ -55,7 +55,9 @@ $('.tab-menu2 li a').click(function(e){
 
 })
 
-$('.tab-menu li').eq(1).find('a').trigger('click');
+$('.team-main .tab-menu li').eq(1).find('a').trigger('click');
+$('.tab-main-menu .tab-menu li').eq(2).find('a').trigger('click');
+$('.tab-main-menu .tab-menu2 li').eq(3).find('a').trigger('click');
 
 
 $('.slider-block').slick();
@@ -123,5 +125,8 @@ $(document).ready(function() {
     }
 });
 });
+
+//single slider
+$('.single-item-slide-block').slick();
 
 
