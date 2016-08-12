@@ -28,6 +28,10 @@ a:hover{
 	text-align: center;
 }
 
+#username {
+    float: right;
+}
+
 /* ==========================================================================
    Setting up the fonts
    ========================================================================== */
@@ -1379,6 +1383,16 @@ a.questions-date {
 	margin-right: -10px;
 	z-index: 9;
 }
+
+.login-box-right {
+	width: 200px;
+	height: 23px;
+	text-align: center;
+	margin-right: -20px;
+    margin-left: 110px;
+	z-index: 9;
+    float: right
+}
 .login-box label {
 	color: #e8125b;
 	display: inline;
@@ -1959,6 +1973,11 @@ footer {
 	text-align: left;
 	margin-right: 0;
 }
+/*.login-box.sort-menu-block .right-side {
+    margin-left: 100px;
+	text-align: left;
+	margin-right: 0;
+}*/
 .login-box.sort-menu-block:after {
 	display: none;
 }
