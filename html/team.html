@@ -23,33 +23,40 @@
   </head>
   <body>
     <div id="wrapper">
-		<header id="header">
-            <div class="row expanded">
-            	<div class="columns large-6  small-6">
-                	<a href="index.html" class="logo-block"><img src="_ui/images/logo.gif" alt="logo"></a>
+      <div class="v1-container challenge-container"> 
+            <header id="header">
+                <div class="row expanded">
+                    <div class="columns large-4  small-12">
+                        <a href="index.html" class="logo-block"><img src="_ui/images/logo.gif" alt="logo"></a>
+                        <span class="toggle"></span>
+                    </div>
+                        <div class="columns large-8  small-12">
+                        <div class="right-block top-nav">
+                            <div class="right-hexas">
+                                 <span class="user-iocn"><a href="#">
+                                    <span class="hexagon">
+                                      <span class="hexTop"></span>
+                                      <span class="hexBottom"></span>
+                                    </span></a>
+                                  </span>
+                                <div class="right-hexa">
+                                    <a href="#">ABOUT</a>
+                                </div>
+                                <div class="right-hexa">
+                                    <a href="#">MENU</a>
+                                        <ul class="dropdown-menu">
+                                          <li><a href="#">Sub Item 1</a></li>
+                                          <li><a href="#">Sub Item 2</a></li>
+                                          <li><a href="#">Sub Item 3</a></li>
+                                          <!-- ... -->
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="columns large-6  small-6">
-                	<ul class="top-nav">
-                      <li>
-                        <a href="#" class="submenu">MENU</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Sub Item 1</a></li>
-                          <li><a href="#">Sub Item 2</a></li>
-                          <li><a href="#">Sub Item 3</a></li>
-                          <!-- ... -->
-                        </ul>
-                      </li>
-                    </ul>
-                  <span class="user-iocn"><a href="#">
-                    <span class="hexagon">
-                      <span class="hexTop"></span>
-                      <span class="hexBottom"></span>
-                    </span></a>
-                  </span>
-                </div>
-            </div>
-        </header>
-        <!-- /Header -->
+            </header><!-- /Header -->
+        </div> <!-- /v1-container challenge-container -->
         <div id="main" class="team-main">
           <div class="row">
             <div class="columns large-12 small-12">
@@ -61,7 +68,7 @@
                               <ul class="tab-menu">
                                   <li><a href="#tab1">5 Projects</a></li>
                                   <li class="active-tab"><a href="#tab2">Activity</a></li>
-                                  <li><a href="#tab10">Teams</a></li>
+                                  <li><a href="#tab8">Teams</a></li>
                                   <li><a href="#tab3">Portfolio</a></li>
                               </ul>
                           </div>
@@ -285,8 +292,6 @@
                                       <section class="tab-content2" id="tab5">
                                         <p class="columns">Coming Soon</p>
                                       </section>
-                                        
-                                    
                                       <section class="tab-content2" id="tab7">
                                         <p class="columns">Coming Soon</p>
                                       </section>
@@ -295,10 +300,19 @@
                                 </div> 
                               </section>
                               
-                              <!-- TEAMS TAB SECTION -->
-                              <!-----    Move to new tab section -------->    
-  <!--should connect to teams tab --> <section class="tab-content1 job-skills" id="tab10">
-                                        <div class="column large-4 medium-4 small-12">
+                              <!-- TEAMS TAB SECTION -->    
+                              <section class="tab-content1 job-skills" id="tab8">
+                              <div class="multi-tab-section">
+                                  <div id="tabs-section2">
+                                       <div class="column large-12 medium-12 small-12">
+                                          <ul class="tab-menu2">
+                                            <li class="disabled"><a href="#">Skills Q/A's</a></li>
+                                            <li class="disabled"><a href="#">Project Q/A's</a></li>
+                                            <li class="disabled"><a href="#">Help Requests</a></li>
+                                            <li class="disabled"><a href="#">Update Stream</a></li>
+                                          </ul>
+                                        </div>
+                                     <div class="column large-4 medium-4 small-12">
                                           <div class="team-hex-main">
                                             <div class="team-members">
                                               <div class="team-wrapper">
@@ -432,8 +446,9 @@
                                               
                                             </div>
                                         </div>
-                                        <p class="team-footer"><strong>Groups</strong>  page would follow similar format</p>
-                                      </section>
+                                  </div><!-- /tabs-section2 -->
+                              </div><!-- /multi-tabs-section -->
+                              </section>
                               
                               <!-- PORTFOLIO TAB SECTION -->
                               <section class="tab-content1 job-skills" id="tab3">
