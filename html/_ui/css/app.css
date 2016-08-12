@@ -1128,6 +1128,20 @@ a.questions-date {
     width: 84px;
     text-align: center;
 }
+
+.v1-hexagon-block h3.challenges {
+	display: inline-block;
+	color: #000;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    transform: rotate(-29deg);
+    -webkit-transform: rotate(-29deg);
+    position: relative;
+    margin: 64px -5px 0 0;
+    width: 100px;
+    text-align: center;
+}
 .v1-hexagon-block h3:after {
 	content: "";
 	display: inline-block;
