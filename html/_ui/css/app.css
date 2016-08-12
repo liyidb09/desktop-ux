@@ -396,8 +396,8 @@ a:hover{
 }
 .user-iocn {
 	display: inline-block;
-	float: right;
-	margin-right: 5px;
+	float: left;
+	margin-right: 0;
 }
 .user-iocn a {
 	display: block;
@@ -591,7 +591,7 @@ a:hover{
   position: relative;
   width: 45px; 
   height: 25.98px;
-  margin: 12.99px 0;
+  margin: 0;
   background-image: url('../images/user-photo.jpg');
   background-size: auto 47.3427px;
   background-position: center;
