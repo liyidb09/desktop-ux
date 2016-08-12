@@ -23,33 +23,40 @@
   </head>
   <body>
     <div id="wrapper">
-		<header id="header">
-            <div class="row expanded">
-            	<div class="columns large-6  small-6">
-                	<a href="index.html" class="logo-block"><img src="_ui/images/logo.gif" alt="logo"></a>
+      <div class="v1-container challenge-container"> 
+            <header id="header">
+                <div class="row expanded">
+                    <div class="columns large-4  small-12">
+                        <a href="index.html" class="logo-block"><img src="_ui/images/logo.gif" alt="logo"></a>
+                        <span class="toggle"></span>
+                    </div>
+                        <div class="columns large-8  small-12">
+                        <div class="right-block top-nav">
+                            <div class="right-hexas">
+                                 <span class="user-iocn"><a href="#">
+                                    <span class="hexagon">
+                                      <span class="hexTop"></span>
+                                      <span class="hexBottom"></span>
+                                    </span></a>
+                                  </span>
+                                <div class="right-hexa">
+                                    <a href="#">ABOUT</a>
+                                </div>
+                                <div class="right-hexa">
+                                    <a href="#">MENU</a>
+                                        <ul class="dropdown-menu">
+                                          <li><a href="#">Sub Item 1</a></li>
+                                          <li><a href="#">Sub Item 2</a></li>
+                                          <li><a href="#">Sub Item 3</a></li>
+                                          <!-- ... -->
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="columns large-6  small-6">
-                	<ul class="top-nav">
-                      <li>
-                        <a href="#" class="submenu">MENU</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Sub Item 1</a></li>
-                          <li><a href="#">Sub Item 2</a></li>
-                          <li><a href="#">Sub Item 3</a></li>
-                          <!-- ... -->
-                        </ul>
-                      </li>
-                    </ul>
-                  <span class="user-iocn"><a href="#">
-                    <span class="hexagon">
-                      <span class="hexTop"></span>
-                      <span class="hexBottom"></span>
-                    </span></a>
-                  </span>
-                </div>
-            </div>
-        </header>
-        <!-- /Header -->
+            </header><!-- /Header -->
+        </div> <!-- /v1-container challenge-container -->
         <div id="main" class="team-main">
           <div class="row">
             <div class="columns large-12 small-12">
@@ -61,6 +68,7 @@
                               <ul class="tab-menu">
                                   <li><a href="#tab1">5 Projects</a></li>
                                   <li class="active-tab"><a href="#tab2">Activity</a></li>
+                                  <li><a href="#tab8">Teams</a></li>
                                   <li><a href="#tab3">Portfolio</a></li>
                               </ul>
                           </div>
@@ -73,10 +81,10 @@
                                   <div id="tabs-section2">
                                     <div class="column large-12 medium-12 small-12">
                                       <ul class="tab-menu2" >
-                                        <li class="disabled"><a href="#">Questions</a></li>
-                                        <li class="disabled"><a href="#">Replies</a></li>
-                                        <li class="disabled"><a href="#">Teams</a></li>
+                                        <li class="disabled"><a href="#">Skills Q/A's</a></li>
+                                        <li class="disabled"><a href="#">Project Q/A's</a></li>
                                         <li class="disabled"><a href="#">Help Requests</a></li>
+                                        <li class="disabled"><a href="#">Update Stream</a></li>
                                       </ul>
                                     </div>
                                   <div class="column large-4 medium-4 small-6">
@@ -160,13 +168,14 @@
                                   <div id="tabs-section2">
                                     <div class="column large-12 medium-12 small-12">
                                       <ul class="tab-menu2">
-                                        <li class="active-tab"><a href="#tab4">Questions</a></li>
-                                        <li><a href="#tab5">Replies</a></li>
-                                        <li><a href="#tab6">Teams</a></li>
-                                        <li><a href="#tab7">Help Requests</a></li>
+                                        <li class="active-tab"><a href="#tab4">Skills Q/A's</a></li>
+                                        <li><a href="#tab5">Project Q/A's</a></li>
+                                        <li><a href="#tab6">Help Requests</a></li>
+                                        <li><a href="#tab7">Update Stream</a></li>
                                       </ul>
                                     </div>
                                     <div class="tabs-content-wrp">
+                                <!-- TAB 4 SKILLS Q/A's -->        
                                       <section class="tab-content2 column large-12 medium-12 small-12" id="tab4">
                                         <div class="questions-section clearfix">
                                           <div class="row">
@@ -281,11 +290,150 @@
                                         </div>
                                         <p class="team-footer"><strong>Replies</strong>  page would include the pic associated with the original poster clicking onto the thread title - goes to discussion page from the project</p>
                                       </section>
+                                        
+                                <!-- TAB 5 PROJECT Q/A's -->        
                                       <section class="tab-content2" id="tab5">
+                                        <div class="questions-section clearfix">
+                                          <div class="row">
+                                            <aside class="large-10 medium-10 columns left-questionsblogs">
+                                                <aside class="left hexgon-small-icon">
+                                                  <span class="user-iocn"><a href="#">
+                                                    <span class="hexagon">
+                                                      <span class="hexTop"></span>
+                                                      <span class="hexBottom"></span>
+                                                    </span></a>
+                                                  </span>    
+                                                </aside>
+                                                <aside class="left">
+                                                  <h4>Thread title</h4>
+                                                  <ul class="title-description">
+                                                    <li><a href="#">#Smoker</a></li>
+                                                    <li><a href="#">#Indoor</a></li>
+                                                  </ul>
+                                                  <ul class="rating-icons">
+                                                    <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                  </ul>
+                                                </aside>
+                                              <p>Why not have an appliance that will allow you to smoke<br />scrumptious foods all year round without smoking up your house?</p>
+                                            </aside>
+                                            <aside class="large-2 medium-2 columns date-text">
+                                              <a href="#" class="questions-date">date</a>
+                                            </aside>
+                                          </div>
+                                        </div>
+                                        <div class="questions-section clearfix">
+                                          <div class="row">
+                                            <aside class="large-10 medium-10 columns left-questionsblogs">
+                                                <aside class="left hexgon-small-icon">
+                                                  <span class="user-iocn"><a href="#">
+                                                    <span class="hexagon">
+                                                      <span class="hexTop"></span>
+                                                      <span class="hexBottom"></span>
+                                                    </span></a>
+                                                  </span>    
+                                                </aside>
+                                                <aside class="left">
+                                                  <h4>Thread title</h4>
+                                                  <ul class="title-description">
+                                                    <li><a href="#">#Smoker</a></li>
+                                                    <li><a href="#">#Indoor</a></li>
+                                                  </ul>
+                                                  <ul class="rating-icons">
+                                                    <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                  </ul>
+                                                </aside>
+                                              <p>Why not have an appliance that will allow you to smoke<br />scrumptious foods all year round without smoking up your house?</p>
+                                            </aside>
+                                            <aside class="large-2 medium-2 columns date-text">
+                                              <a href="#" class="questions-date">date</a>
+                                            </aside>
+                                          </div>
+                                        </div>
+                                        <div class="questions-section clearfix">
+                                          <div class="row">
+                                            <aside class="large-10 medium-10 columns left-questionsblogs">
+                                                <aside class="left hexgon-small-icon">
+                                                  <span class="user-iocn"><a href="#">
+                                                    <span class="hexagon">
+                                                      <span class="hexTop"></span>
+                                                      <span class="hexBottom"></span>
+                                                    </span></a>
+                                                  </span>    
+                                                </aside>
+                                                <aside class="left">
+                                                  <h4>Thread title</h4>
+                                                  <ul class="title-description">
+                                                    <li><a href="#">#Smoker</a></li>
+                                                    <li><a href="#">#Indoor</a></li>
+                                                  </ul>
+                                                </aside>
+                                              <p>Why not have an appliance that will allow you to smoke<br />scrumptious foods all year round without smoking up your house?</p>
+                                            </aside>
+                                            <aside class="large-2 medium-2 columns date-text">
+                                              <a href="#" class="questions-date">date</a>
+                                            </aside>
+                                          </div>
+                                        </div>
+                                        <div class="questions-section clearfix">
+                                          <div class="row">
+                                            <aside class="large-10 medium-10 columns left-questionsblogs">
+                                                <aside class="left hexgon-small-icon">
+                                                  <span class="user-iocn"><a href="#">
+                                                    <span class="hexagon">
+                                                      <span class="hexTop"></span>
+                                                      <span class="hexBottom"></span>
+                                                    </span></a>
+                                                  </span>    
+                                                </aside>
+                                                <aside class="left">
+                                                  <h4>Thread title</h4>
+                                                  <ul class="title-description">
+                                                    <li><a href="#">#Smoker</a></li>
+                                                    <li><a href="#">#Indoor</a></li>
+                                                  </ul>
+                                                </aside>
+                                              <p>Why not have an appliance that will allow you to smoke<br />scrumptious foods all year round without smoking up your house?</p>
+                                            </aside>
+                                            <aside class="large-2 medium-2 columns date-text">
+                                              <a href="#" class="questions-date">date</a>
+                                            </aside>
+                                          </div>
+                                        </div>
+                                        <p class="team-footer"><strong>Replies</strong>  page would include the pic associated with the original poster clicking onto the thread title - goes to discussion page from the project</p>
+                                      </section>
+                                        
+                                 <!-- TAB 6 UPDATE STREAM -->        
+                                      <section class="tab-content2" id="tab6">
+                                        <p class="columns">Coming Soon</p>
+                                      </section> 
+                                        
+                                <!-- TAB 7 UPDATE STREAM -->        
+                                      <section class="tab-content2" id="tab7">
                                         <p class="columns">Coming Soon</p>
                                       </section>
-                                      <section class="tab-content2" id="tab6">
-                                        <div class="column large-4 medium-4 small-12">
+                                    </div>
+                                  </div> 
+                                </div> 
+                              </section>
+                              
+                              <!-- TEAMS TAB SECTION -->    
+                              <section class="tab-content1 job-skills" id="tab8">
+                              <div class="multi-tab-section">
+                                  <div id="tabs-section2">
+                                       <div class="column large-12 medium-12 small-12">
+                                          <ul class="tab-menu2">
+                                            <li class="disabled"><a href="#">Skills Q/A's</a></li>
+                                            <li class="disabled"><a href="#">Project Q/A's</a></li>
+                                            <li class="disabled"><a href="#">Help Requests</a></li>
+                                            <li class="disabled"><a href="#">Update Stream</a></li>
+                                          </ul>
+                                        </div>
+                                     <div class="column large-4 medium-4 small-12">
                                           <div class="team-hex-main">
                                             <div class="team-members">
                                               <div class="team-wrapper">
@@ -419,15 +567,10 @@
                                               
                                             </div>
                                         </div>
-                                        <p class="team-footer"><strong>Groups</strong>  page would follow similar format</p>
-                                      </section>
-                                      <section class="tab-content2" id="tab7">
-                                        <p class="columns">Coming Soon</p>
-                                      </section>
-                                    </div>
-                                  </div> 
-                                </div> 
+                                  </div><!-- /tabs-section2 -->
+                                </div><!-- /multi-tabs-section -->
                               </section>
+                              
                               <!-- PORTFOLIO TAB SECTION -->
                               <section class="tab-content1 job-skills" id="tab3">
                                   <!-- added tab menu-->
@@ -435,62 +578,62 @@
                                   <div id="tabs-section2">
                                   <div class="column large-12 medium-12 small-12">
                                       <ul class="tab-menu2">
-                                        <li class="disabled"><a href="#">Questions</a></li>
-                                        <li class="disabled"><a href="#">Replies</a></li>
-                                        <li class="disabled"><a href="#">Teams</a></li>
+                                        <li class="disabled"><a href="#">Skills Q/A's</a></li>
+                                        <li class="disabled"><a href="#">Project Q/A's</a></li>
                                         <li class="disabled"><a href="#">Help Requests</a></li>
+                                        <li class="disabled"><a href="#">Update Stream</a></li>
                                       </ul>
                                     </div>
-                                  <div class="column large-4 medium-4 small-6">
-                                      <div class="project-img">
-                                          <img src="_ui/images/project-img1.jpg" alt="">
-                                      </div>
-                                      <h3>
-                                          <a href="#">Cold Brewed Coffee</a>
-                                      </h3>
-                                  </div>
-                                  <div class="column large-4 medium-4 small-6">
-                                      <div class="project-img">
-                                          <img src="_ui/images/project-img2.jpg" alt="">
-                                      </div>
-                                      <h3>
-                                          <a href="#">Descicant Dry on Dishwashers</a>
-                                      </h3>
-                                  </div>
-                                  <div class="column large-4 medium-4 small-6">
-                                      <div class="project-img">
-                                          <img src="_ui/images/project-img3.jpg" alt="">
-                                      </div>
-                                      <h3>
-                                          <a href="#">Indoor smoker</a>
-                                      </h3>
-                                  </div>
-                                  <div class="column large-4 medium-4 small-6">
-                                      <div class="project-img">
-                                          <img src="_ui/images/project-img1.jpg" alt="">
-                                      </div>
-                                      <h3>
-                                          <a href="#">Cold Brewed Coffee</a>
-                                      </h3>
-                                  </div>
-                                  <div class="column large-4 medium-4 small-6">
-                                      <div class="project-img">
-                                          <img src="_ui/images/project-img2.jpg" alt="">
-                                      </div>
-                                      <h3>
-                                          <a href="#">Descicant Dry on Dishwashers</a>
-                                      </h3>
-                                  </div>
-                                  <div class="column large-4 medium-4 small-6">
-                                      <div class="project-img">
-                                          <img src="_ui/images/project-img3.jpg" alt="">
-                                      </div>
-                                      <h3>
-                                          <a href="#">Indoor smoker</a>
-                                      </h3>
-                                  </div>
-                                  </div> 
-                                </div> 
+                                 <div id="main">
+            
+                                    <!-- Beginning Portfolio Section -->
+                                    <div class="row">
+                                        <div class="columns large-12 small-12">
+                                            <div class="login-box-right sort-menu-block">
+                                                <ul>
+                                                    <li><a href="#">SORT</a></li>
+                                                    <li><a href="#">FILTER</a></li>
+                                                    <li><a href="#">SEARCH</a></li>
+                                                </ul>
+                                            </div>
+                                           <!-- <div class="breadcrumbs">
+                                                <a href="#" class="previous-page"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                                                <a href="#" class="f-right"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                                            </div>-->
+                                              <!--<div class="profile-block row">
+                                                  <h3 class="align-center">First Last Name<span>@username</span></h3>
+                                              </div>-->
+                                              <div class="detail-section">
+                                                <h2>Cold Brewed Coffee <div id="username">@username</div></h2>
+                                                <div class="slider-block">
+                                                  <div class="slider-content">
+                                                    <div class="slider-left">
+                                                      <img class="mainimg" src="_ui/images/project-img1.jpg" alt="image">
+                                                    </div>
+                                                    <div class="slider-right">
+                                                      <span><img class="thumbnailimg" data-bigimage="_ui/images/project-img1.jpg" src="_ui/images/project-img1.jpg" alt="image"></span>
+                                                      <span><img class="thumbnailimg" data-bigimage="_ui/images/project-img3.jpg" src="_ui/images/project-img3.jpg" alt="image"></span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="slider-content">
+                                                    <div class="slider-left">
+                                                      <img class="mainimg" src="_ui/images/project-img1.jpg" alt="image">
+                                                    </div>
+                                                    <div class="slider-right">
+                                                      <span><img class="thumbnailimg" data-bigimage="_ui/images/project-img1.jpg" src="_ui/images/project-img1.jpg" alt="image"></span>
+                                                      <span><img class="thumbnailimg" data-bigimage="_ui/images/project-img2.jpg" src="_ui/images/project-img2.jpg" alt="image"></span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="detail-content">
+                                                    <p>This is where I write about myself. This is where I write about myself. This is where I write about myself. This is where I write about myself. This is where I write about myself. This is where I write about myself.</p>
+                                                </div>
+                                              </div>
+                                            </div>                    
+                                        </div>
+                                    </div><!-- /Main -->
+                                  </div> <!-- /tabs-section 2 -->
+                                </div> <!-- /multi-tab section -->
                               </section>
                           </div>
                       </div>
