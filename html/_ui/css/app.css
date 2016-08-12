@@ -1,4 +1,4 @@
-﻿
+
 /* ==========================================================================
    Common CSS
    ========================================================================== */
@@ -299,6 +299,19 @@ a:hover{
 	background: #ea094b;
 	color: #fff;
 	text-decoration: none;
+}
+
+/* disabling the bottom menu */
+.team-section .page-tab-section .tab-menu2 li.disabled,
+.team-section .page-tab-section .tab-menu2 li.disabled a,
+.team-section .page-tab-section .tab-menu2 li.disabled a:hover,
+.team-section .page-tab-section .tab-menu2 li.disabled a:hover:after, 
+.team-section .page-tab-section .tab-menu2 li.disabled a::after{
+    background: #fff;
+    color: lightgray;
+    transform: none;
+	-webkit-transform: none;
+	-moz-transform: none;
 }
 .tabs-content-wrp{
 	float: left;
@@ -700,6 +713,20 @@ a:hover{
 .team-section .page-tab-section .multi-tab-section .tab-menu2 li.active-tab a {
 	color: #fff;
 }
+
+.team-section .page-tab-section .multi-tab-section .tab-menu2 li.disabled a:hover::after, 
+.team-section .page-tab-section .multi-tab-section .tab-menu2 li.disabled a::after {
+	background: #fff;
+	border: 0;
+	transform: skew(42deg);
+	-webkit-transform: skew(42deg);
+	-moz-transform: skew(42deg);
+}
+.team-section .page-tab-section .multi-tab-section .tab-menu2 li.disabled a:hover, 
+.team-section .page-tab-section .multi-tab-section .tab-menu2 li.disabled a {
+	color: lightgray;
+}
+
 .multi-tab-section {
   float: left;
   width: 100%;
