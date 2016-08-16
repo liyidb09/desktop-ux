@@ -481,7 +481,7 @@ button{
 	padding: 0;
 }
 .page-tab-section .tab-menu li:last-child a{
-	float: right;
+	/*float: right;*/
 }
 .page-tab-section .tab-menu li a, .page-tab-section .tab-menu2 li a{
 	display: block;
@@ -491,6 +491,7 @@ button{
 	line-height: 35px;
 	text-align: center;
 	font-weight: 600;
+    margin-right: 215px;
 }
 
 .tabs-content-wrp{
@@ -592,8 +593,9 @@ button{
 }
 .user-iocn {
 	display: inline-block;
-	float: right;
-	margin-right: 5px;
+	float: left;
+	margin-right: 0;
+    margin-top: -12px;
 }
 .user-iocn a {
 	display: block;
@@ -1733,6 +1735,14 @@ text-align: center;
 	height: 23px;
 	text-align: center;
 	margin-right: -10px;
+	z-index: 9;
+}
+
+.login-box-right {
+	width: 280px;
+	height: 23px;
+	text-align: center;
+	margin-left: 55em;
 	z-index: 9;
 }
 .login-box label {
