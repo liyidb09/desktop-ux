@@ -1480,15 +1480,15 @@ a.questions-date {
 }
 .v1-hexagon-block h3 {
 	display: inline-block;
-	color: #000;
+    color: #000;
     font-size: 13px;
     font-weight: 600;
     line-height: 20px;
     transform: rotate(-29deg);
     -webkit-transform: rotate(-29deg);
     position: relative;
-    margin: 64px -5px 0 0;
-    width: 84px;
+    margin: 68px -7px 0 0;
+    width: 95px;
     text-align: center;
 }
 .v1-hexagon-block h3.challenges{		
@@ -1992,6 +1992,7 @@ footer {
 .v1-hexa-row4-block {
 	padding-left: 150px;
 }
+
 .v1-hexa-row4-block .hexagon4 {
     background-image: url("../images/user-photo.jpg");
     background-position: -5px center;
@@ -2002,6 +2003,10 @@ footer {
 .v1-hexa-row4-block .hexagon4 .hexBottom::after {
     background-position: -5px bottom;
 }
+.v1-hexa-row5-block {
+	padding-left: 200px;
+}
+
 .earn-coins-block {
 	position: absolute;
 	width: auto;
@@ -2095,7 +2100,7 @@ footer {
 	font-weight: 600;
 }
 .slider-v1screen{
-	width:670px;
+	width:680px;
 }
 .slider-v1screen .slick-list{
 	min-height:216px;
