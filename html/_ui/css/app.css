@@ -32,7 +32,6 @@ button{
 #username {
     float: right;
 }
-
 .login{
     max-width: 50%;
 }
@@ -952,7 +951,6 @@ button{
   z-index: 2;
   background: inherit;
 }
-
 .user-iocn-profile .hexagon {
   position: relative;
   width: 45px;
@@ -1594,7 +1592,7 @@ text-align: center;
   height: 86.03px;
   margin: 43.01px 0;
   background-image: url('../images/project-img2.jpg');
-  background-size: auto 167.4316px;
+  background-size: auto 169px;
   background-position: -56px center;
   border-left: solid 2px #da1660;
   border-right: solid 2px #da1660;
@@ -1955,6 +1953,16 @@ footer {
 .v1-hexa-row2-block .hexagon4 .hexBottom::after {
     background-position: -5px bottom;
 }
+.v1-hexa-row5-block .hexagon {
+	background-image: url('../images/challenge_logo.png');
+	background-position: center center;
+}
+.v1-hexa-row5-block .hexagon .hexTop::after {
+    background-position: center top;
+}
+.v1-hexa-row5-block .hexagon .hexBottom::after {
+    background-position: center bottom;
+}
 .v1-hexa-box .team-members {
 	width: auto;
 }
@@ -2213,7 +2221,7 @@ footer {
 		width:750px;	
 	}
 	.slider-v1screen {
-	  width: 373px;
+	  width: 384px;
 	}
 	.earn-points-block {
 		right:7%;
@@ -2222,6 +2230,12 @@ footer {
 		display:none;	
 	}
 	.v1-hexa-row4-block  .m-hide {
+		display:none;	
+	}
+	.v1-hexa-row5-block .v1-hexa-box:last-child {
+		display:none;	
+	}
+	.v1-hexa-row5-block  .m-hide {
 		display:none;	
 	}
 	.earn-coins-block {
@@ -2310,9 +2324,9 @@ footer {
 
 @media (max-width: 639px){
 	.slider-v1screen {
-	  width: 226px;
+	  width: 236px;
 	}
-	.v1-hexa-row2-block,.v1-hexa-row3-block,.v1-hexa-row4-block {
+	.v1-hexa-row2-block,.v1-hexa-row3-block,.v1-hexa-row4-block, .v1-hexa-row5-block {
 		padding-left: 0px;	
 	}
 	.mm-hide {
