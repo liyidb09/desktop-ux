@@ -32,6 +32,10 @@ button{
 #username {
     float: right;
 }
+
+.login{
+    max-width: 50%;
+}
 /*body {
     background: #fff url(../images/background.png) 50% 50%;
     background-size: 100% 100%;
@@ -939,6 +943,74 @@ button{
   background-position: center bottom;
 }
 .user-iocn .hexagon:after {
+  content: "";
+  position: absolute;
+  top: 1.1547px;
+  left: 0;
+  width: 41.0000px;
+  height: 23.6714px;
+  z-index: 2;
+  background: inherit;
+}
+
+.user-iocn-profile .hexagon {
+  position: relative;
+  width: 45px;
+  height: 25.98px;
+  margin: 12.99px 400px;
+  background-image: url('../images/user-photo.jpg');
+  background-size: auto 47.3427px;
+  background-position: center;
+  border-left: solid 2px #f89728;
+  border-right: solid 2px #f89728;
+  display: block;
+}
+.user-iocn-profile .hexTop,
+.user-iocn-profile .hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 31.82px;
+  height: 31.82px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 4.2px;
+  display: inline-block;
+}
+/*counter transform the bg image on the caps*/
+.user-iocn-profile .hexTop:after,
+.user-iocn-profile .hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 41.0000px;
+  height: 23.671361036774655px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-11.8357px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-11.8357px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-11.8357px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+.user-iocn-profile .hexTop {
+  top: -15.9099px;
+  border-top: solid 3.8284px #f89728;
+  border-right: solid 3.8284px #f89728;
+}
+.user-iocn-profile .hexTop:after {
+  background-position: center top;
+}
+.user-iocn-profile .hexBottom {
+  bottom: -15.9099px;
+  border-bottom: solid 3.8284px #f89728;
+  border-left: solid 3.8284px #f89728;
+}
+.user-iocn-profile .hexBottom:after {
+  background-position: center bottom;
+}
+.user-iocn-profile .hexagon:after {
   content: "";
   position: absolute;
   top: 1.1547px;
