@@ -3734,6 +3734,7 @@ a.more-btn:after {
 .hack-form-section .login-element {
 	position: relative;
 	padding: 0 0 20px;
+	overflow: visible;
 }
 .hack-form-section .login-element::before {
 	min-width: 30px;
@@ -3759,4 +3760,206 @@ a.more-btn:after {
 	display: inline-block;
 	float: left;
     margin: 11px 0 0 30px;
+}
+.select-info {
+	padding: 0 15px;
+}
+.select-info div.fancy-select div.trigger {
+	width: 100%;
+}
+.hack-form-section .login-element.select-info::before {
+	content: "";
+	background: transparent;
+}
+.hack-form-section .login-element.select-info {
+	padding-left: 29px;
+	padding-right: 29px;
+}
+.select-info div.fancy-select {
+	font-size: 1rem;
+	color: #000;
+	text-align: left;
+	height: 2.4375rem;
+	font-weight: normal;
+}
+.select-info div.fancy-select div.trigger {
+	background: #fff;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	color: #000;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	font-weight: 600;
+	line-height: 2.4375rem;
+	padding:0 0 0 2px;
+}
+.select-info div.fancy-select div.trigger::after {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: transparent;
+  border-image: none;
+  border-style: solid;
+  border-width: 0;
+  content: "\f13a";
+  display: inline-block;
+  height: 0;
+  position: static;
+  right: 9px;
+  top: 20px;
+  width: 0;
+  font-family: FontAwesome;
+  color: #db0059;
+  margin-left: 10%;
+}
+.select-info div.fancy-select select:focus + div.trigger {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.select-info div.fancy-select ul.options.overflowing {
+	bottom: 41px;
+}
+.select-info div.fancy-select ul.options {
+	background: #fff;
+	border-radius: 0;
+	box-shadow: none;
+	border: 0;
+	max-width: 100%;
+	max-height: 530px;
+	min-width: 100%;
+}
+.select-info div.fancy-select ul.options li {
+  color: #ccced1;
+  padding: 5px 0 5px 26%;
+}
+.select-info div.fancy-select ul.options li:hover {
+	color: #000;
+}
+.select-info div.fancy-select ul.options li.selected {
+	background: transparent;
+}
+.select-info div.fancy-select div.trigger.open {
+	border-color: #000;
+}
+.select-info div.fancy-select ul.options.open {
+	top: 42px;
+}
+.hack-form-section .login-element.select-info input {
+	width: 100%;
+}
+.hackathon-content-block form {
+	clear: both;
+	padding-bottom: 300px;
+}
+.search-block {
+	position: relative;
+}
+.invite-block {
+	clear: both;
+}
+.hack-form-section .invite-block .login-element.select-info {
+	padding-bottom: 5px;
+}
+.hack-form-section .search-block .login-element.required:before {
+	background: transparent;
+}
+.hack-form-section .search-block .login-element input {
+	border: 1px solid #ccc;
+	padding: 0 30px 0 10px;
+	height: 1.85rem;
+	width: 89.5%;
+}
+.submit-block {
+	position: absolute;
+	right: 36px;
+	top: 6px;
+	background: transparent;
+	font-size: 0;
+	width: 18px;
+	height: 18px;
+	z-index: 2;
+}
+.submit-block input[type="submit"] {
+	font-size: 0;
+	line-height: 0;
+	background: url('../images/search-icon.png') no-repeat center;
+	border: 0;
+	width: 16px;
+	height: 16px;
+	padding: 0;
+}
+.next-content-block {
+	position: relative;
+}
+.next-content-block a.more-btn {
+	position: absolute;
+	right: -47%;
+	top: 29px;
+	font-weight: 600;
+}
+@media(max-width: 979px) {
+	.hack-form-section .login-element.select-info {
+	  padding-left: 20px;
+	  padding-right: 20px;
+	}
+}
+@media(max-width: 767px) {
+	.hack-form-section {
+		width: 300px;
+	}
+	.hack-form-section .login-element input {
+		width: 79%;
+		font-size: 0.6rem;
+		height: 1.8rem;
+	}
+	.select-info div.fancy-select div.trigger {
+	  font-size: 0.6rem;
+	  line-height: 1.8rem;
+	}
+	.hack-form-section .login-element::before {
+		top: 9px;
+	}
+	.hack-form-section .login-element {
+		padding-bottom: 5px;
+	}
+	.hack-form-section .search-block .login-element input {
+		width: 82%;
+	}
+	.hackathon-content-block .breadcrumbs {
+	  right: 9%;
+	  top: 1px;
+	}
+	.hackathon-content-block .breadcrumbs a {
+		font-size: 0.6rem;
+	}
+	.next-content-block a.more-btn {
+	  right: -28%;
+	  top: 5px;
+	  font-size: 8px;
+      line-height: 18px;
+	}
+	.select-info div.fancy-select ul.options li {
+		font-size: 0.6rem;
+	    line-height: 1rem;
+	}
+	.hack-form-section .login-element.select-info {
+	  padding-left: 30px;
+	  padding-right: 30px;
+	}
+
+}
+@media(max-width: 479px) {
+	.hack-form-section {
+	  width: 220px;
+	}
+	.hackathon-content-block .breadcrumbs {
+	  right: -2%;
+	}
+	.hack-form-section .login-element.select-info {
+	  padding-left: 20px;
+	  padding-right: 20px;
+	}
 }
