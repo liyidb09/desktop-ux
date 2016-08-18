@@ -891,7 +891,9 @@ button{
 .hexagon {		
 	display: block;		
 }
-.user-iocn .hexagon {
+.user-iocn .hexagon,
+.user-iocn-profile .hexagon 
+{
   position: relative;
   width: 45px;
   height: 25.98px;
@@ -904,73 +906,12 @@ button{
   display: block;
 }
 
-.user-iocn .hexTop,
-.user-iocn .hexBottom {
-  position: absolute;
-  z-index: 1;
-  width: 31.82px;
-  height: 31.82px;
-  overflow: hidden;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-  -ms-transform: scaleY(0.5774) rotate(-45deg);
-  transform: scaleY(0.5774) rotate(-45deg);
-  background: inherit;
-  left: 4.2px;
-  display: inline-block;
-}
-/*counter transform the bg image on the caps*/
-.user-iocn .hexTop:after,
-.user-iocn .hexBottom:after {
-  content: "";
-  position: absolute;
-  width: 41.0000px;
-  height: 23.671361036774655px;
-  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-11.8357px);
-  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-11.8357px);
-  transform:          rotate(45deg) scaleY(1.7321) translateY(-11.8357px);
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  background: inherit;
-}
-.user-iocn .hexTop {
-  top: -15.9099px;
-  border-top: solid 3.8284px #f89728;
-  border-right: solid 3.8284px #f89728;
-}
-.user-iocn .hexTop:after {
-  background-position: center top;
-}
-.user-iocn .hexBottom {
-  bottom: -15.9099px;
-  border-bottom: solid 3.8284px #f89728;
-  border-left: solid 3.8284px #f89728;
-}
-.user-iocn .hexBottom:after {
-  background-position: center bottom;
-}
-.user-iocn .hexagon:after {
-  content: "";
-  position: absolute;
-  top: 1.1547px;
-  left: 0;
-  width: 41.0000px;
-  height: 23.6714px;
-  z-index: 2;
-  background: inherit;
-}
 .user-iocn-profile .hexagon {
-  position: relative;
-  width: 45px;
-  height: 25.98px;
   margin: 12.99px 400px;
-  background-image: url('../images/user-photo.jpg');
-  background-size: auto 47.3427px;
-  background-position: center;
-  border-left: solid 2px #f89728;
-  border-right: solid 2px #f89728;
-  display: block;
 }
+
+.user-iocn .hexTop,
+.user-iocn .hexBottom,
 .user-iocn-profile .hexTop,
 .user-iocn-profile .hexBottom {
   position: absolute;
@@ -986,8 +927,10 @@ button{
   display: inline-block;
 }
 /*counter transform the bg image on the caps*/
+.user-iocn .hexTop:after,
+.user-iocn .hexBottom:after,
 .user-iocn-profile .hexTop:after,
-.user-iocn-profile .hexBottom:after {
+.user-iocn-profile .hexBottom:after{
   content: "";
   position: absolute;
   width: 41.0000px;
@@ -1000,23 +943,28 @@ button{
   transform-origin: 0 0;
   background: inherit;
 }
-.user-iocn-profile .hexTop {
+.user-iocn .hexTop,
+.user-iocn-profile .hexTop{
   top: -15.9099px;
   border-top: solid 3.8284px #f89728;
   border-right: solid 3.8284px #f89728;
 }
-.user-iocn-profile .hexTop:after {
+.user-iocn .hexTop:after,
+.user-iocn-profile .hexTop:after{
   background-position: center top;
 }
+.user-iocn .hexBottom,
 .user-iocn-profile .hexBottom {
   bottom: -15.9099px;
   border-bottom: solid 3.8284px #f89728;
   border-left: solid 3.8284px #f89728;
 }
-.user-iocn-profile .hexBottom:after {
+.user-iocn .hexBottom:after,
+.user-iocn-profile .hexBottom:after{
   background-position: center bottom;
 }
-.user-iocn-profile .hexagon:after {
+.user-iocn .hexagon:after,
+.user-iocn-profile .hexagon:after{
   content: "";
   position: absolute;
   top: 1.1547px;
@@ -1026,6 +974,7 @@ button{
   z-index: 2;
   background: inherit;
 }
+
 .logo-block {
 	position: relative;
 	top: 7px;
@@ -1817,7 +1766,8 @@ text-align: center;
 	display: inline-block;
 	position: relative;
 }
-.login-box {
+.login-box,
+.login-box-right{
 	width: 280px;
 	height: 23px;
 	text-align: center;
@@ -1826,11 +1776,7 @@ text-align: center;
 }
 
 .login-box-right {
-	width: 280px;
-	height: 23px;
-	text-align: center;
 	margin-left: 55em;
-	z-index: 9;
 }
 .login-box label {
 	color: #e8125b;
@@ -2433,11 +2379,6 @@ footer {
 	text-align: left;
 	margin-right: 0;
 }
-/*.login-box.sort-menu-block .right-side {
-    margin-left: 100px;
-	text-align: left;
-	margin-right: 0;
-}*/
 .login-box.sort-menu-block:after {
 	display: none;
 }
@@ -2544,43 +2485,6 @@ footer {
   border-left: solid 2.8284px #e65a93;
 }
 
-/*code for the image upload hexagon*/
-.camera-hexa-row .hexagon {
-  position: relative;
-  width: 166px; 
-  height: 95.84px;
-  background-color: #fbfbfb;
-  margin: 5em 15em;
-  border-left: solid 2px #e65a93;
-  border-right: solid 2px #e65a93;
-}
-
-.camera-hexa-row .hexagon:before,
-.camera-hexa-row .hexagon:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 117.38px;
-  height: 117.38px;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-  -ms-transform: scaleY(0.5774) rotate(-45deg);
-  transform: scaleY(0.5774) rotate(-45deg);
-  background-color: inherit;
-  left: 22.3101px;
-}
-
-.camera-hexa-row .hexagon:before {
-  top: -58.6899px;
-  border-top: solid 2.8284px #e65a93;
-  border-right: solid 2.8284px #e65a93;
-}
-
-.camera-hexa-row .hexagon:after {
-  bottom: -58.6899px;
-  border-bottom: solid 2.8284px #e65a93;
-  border-left: solid 2.8284px #e65a93;
-}
-/***************/
 
 .challenge-hexa-row2 ul {
 	padding-left: 149px;
