@@ -1274,20 +1274,20 @@ a.questions-date {
 
 .team-wrapper .team-member1 .hexagon {
   position: relative;
-  width: 80px;
-  height: 46.19px;
+  width: 81px;
+  height: 46.5px;
   margin: 23.09px 0;
-  background-image: url('../images/user-photo.jpg');
+  background-image: url('../images/default_profile_photo.png');
   background-size: auto 87.7572px;
   background-position: center;
   border-left: solid 2px #f4b882;
   border-right: solid 2px #f4b882;
 }
 .team-wrapper .team-member2 .hexagon, .team-wrapper .team-member3 .hexagon {
-	background-image: url('../images/john.jpg');
+	background-image: url('../images/default_profile_photo.png');
 }
 .team-wrapper .team-member4 .hexagon {
-	background-image: url('../images/tim.jpg');
+	background-image: url('../images/default_profile_photo.png');
 }
 .team-wrapper .team-member1 .hexTop,
 .team-wrapper .team-member1 .hexBottom {
@@ -1327,8 +1327,8 @@ a.questions-date {
 }
 .team-wrapper .team-member1 .hexBottom {
   bottom: -28.2843px;
-  border-bottom: solid 2.8284px #f4b882;
-  border-left: solid 2.8284px #f4b882;
+  border-bottom: solid 2px #f4b882;
+  border-left: solid 2px #f4b882;
 }
 .team-wrapper .team-member1 .hexBottom:after {
   background-position: center bottom;
@@ -1548,7 +1548,7 @@ a.questions-date {
 	float: left;
 	width: 100%;
 	position: relative;
-	margin-left: -1px;
+	margin-left: -0.5px;
 }
 .v1-hexagon-block h3 {
 	display: inline-block;
@@ -1596,8 +1596,8 @@ text-align: center;
   background-image: url('../images/project-img2.jpg');
   background-size: auto 169px;
   background-position: -56px center;
-  border-left: solid 2px #da1660;
-  border-right: solid 2px #da1660;
+  border-left: solid 3px #da1660;
+  border-right: solid 3px #da1660;
 }
 .v1-hexa-box .hexagon2 {
 	background-image: url('../images/project-img3.jpg');
@@ -2013,7 +2013,7 @@ footer {
 }
 .v1-hexa-box-3block {
 	float: left;
-    margin-left: -1px;
+    margin-left: -0.5px;
     position: relative;
     width: 100%;
 }
@@ -2028,7 +2028,7 @@ footer {
 	width: auto;
 }
 .team-hexa .team-member2 {
-  right: 8px;
+  right: 10px;
   left: auto;
 }
 .team-hexa .team-member3 {
@@ -2186,7 +2186,7 @@ footer {
 	font-weight: 600;
 }
 .slider-v1screen{
-	width:680px;
+	width:682px;
 }
 .slider-v1screen .slick-list{
 	min-height:216px;
