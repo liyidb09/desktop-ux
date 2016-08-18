@@ -1766,7 +1766,8 @@ text-align: center;
 	display: inline-block;
 	position: relative;
 }
-.login-box {
+.login-box,
+.login-box-right{
 	width: 280px;
 	height: 23px;
 	text-align: center;
@@ -1775,11 +1776,7 @@ text-align: center;
 }
 
 .login-box-right {
-	width: 280px;
-	height: 23px;
-	text-align: center;
 	margin-left: 55em;
-	z-index: 9;
 }
 .login-box label {
 	color: #e8125b;
@@ -2382,11 +2379,6 @@ footer {
 	text-align: left;
 	margin-right: 0;
 }
-/*.login-box.sort-menu-block .right-side {
-    margin-left: 100px;
-	text-align: left;
-	margin-right: 0;
-}*/
 .login-box.sort-menu-block:after {
 	display: none;
 }
@@ -2493,43 +2485,6 @@ footer {
   border-left: solid 2.8284px #e65a93;
 }
 
-/*code for the image upload hexagon*/
-.camera-hexa-row .hexagon {
-  position: relative;
-  width: 166px; 
-  height: 95.84px;
-  background-color: #fbfbfb;
-  margin: 5em 15em;
-  border-left: solid 2px #e65a93;
-  border-right: solid 2px #e65a93;
-}
-
-.camera-hexa-row .hexagon:before,
-.camera-hexa-row .hexagon:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 117.38px;
-  height: 117.38px;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-  -ms-transform: scaleY(0.5774) rotate(-45deg);
-  transform: scaleY(0.5774) rotate(-45deg);
-  background-color: inherit;
-  left: 22.3101px;
-}
-
-.camera-hexa-row .hexagon:before {
-  top: -58.6899px;
-  border-top: solid 2.8284px #e65a93;
-  border-right: solid 2.8284px #e65a93;
-}
-
-.camera-hexa-row .hexagon:after {
-  bottom: -58.6899px;
-  border-bottom: solid 2.8284px #e65a93;
-  border-left: solid 2.8284px #e65a93;
-}
-/***************/
 
 .challenge-hexa-row2 ul {
 	padding-left: 149px;
