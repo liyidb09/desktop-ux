@@ -279,6 +279,7 @@ button{
 .user-login{
 	text-align: center;
 	width: 100%;
+    margin-top: 1em;
 }
 .required:before{
 	background: url(../images/icon-star.gif) no-repeat left top;
@@ -3319,7 +3320,11 @@ footer {
 .most-viewed-left-block {
 	float: left;
 	width: 238px;
-    margin-top: -115px;
+}
+.most-viewed-left-block-entries {
+	float: left;
+	width: 238px;
+    margin-top: -155px;
 }
 .most-viewed-middle-block {
 	float: left;
