@@ -331,6 +331,12 @@ button{
 	width: 75%;
 	box-shadow: none !important;
 }
+
+ .login-element.required.index{
+    margin-left: 4.5em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
 .feedback-pane{
 	text-align: center;
 	width: 100%;
