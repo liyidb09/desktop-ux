@@ -747,130 +747,7 @@ button{
     margin: 30px auto;
 }
 
-@media (max-width:1199px){
-	#main {
-		width: 78%;
-		min-height: 0;
-	}
-	.profile-connect header h2{
-		font-size: 18px;
-		line-height: 18px;
-	}
-	.profile-connect header h3{
-		font-size: 18px;
-		line-height: 18px;
-	}
-	#main.team-main {		
-		width: 100%;		
-	}
-}
-@media (min-width: 1200px) and (max-width: 1300px){		
-	#main.team-main {		
-		width: 53%;	
-	}
-}
-/*Mobile Version*/
 
-@media (max-width:768px){
-	#main {
-		width: 96%;
-		min-height: 0;
-	}
-	.profile-connect header h2{
-		font-size: 18px;
-		line-height: 18px;
-	}
-	.profile-connect header h3{
-		font-size: 18px;
-		line-height: 18px;
-	}
-	.profile-block {
-		margin: 0;
-	}
-	.top-nav li:hover ul{
-		display: none;
-	}
-	.slideshow img { max-width: 100%; height: 30px; padding: 0; margin: 0 12px; }
-	
-	.top-nav li:hover a.submenu{
-		border: 1px solid #fff;
-		background: #fff;
-		border-bottom-color: #fff;
-	}
-	.top-nav li a.submenu.active-submenu{
-		border: 1px solid #db0059;
-		border-bottom-color: #fff;
-		color: #333;
-	}
-	.top-nav li a {		
-		padding-bottom: 18px;		
-	}
-	.top-nav{
-		padding: 0 15px 0 0;
-		margin: 0;
-	}
-	.login-element.required::before{
-		display: inline-block;
-	}
-	.login-element::before{
-		display: none;
-	}
-	.login-element textarea {
-		/*margin-left: 60px;*/
-	}
-	.tabs-content-wrp .project-info {
-		font-size: 12px;
-	}
-	.tabs-content-wrp .project-info a:first-child{
-		margin-right: 6px;
-	}
-	.tabs-content-wrp h3 {
-		font-size: 13px;
-		min-height: 60px;
-		margin: 0 0 15px 0;
-	}
-	.page-tab-section .tab-menu li a{
-		font-size: 14px;
-	}
-	.content-section{
-		font-size: 14px;
-		clear: both;
-	}
-	.user-details{
-		margin: 10px 0;
-	}
-	.profile-img{
-		text-align: center;
-	}
-	.user-details h3 {
-		text-align: center;
-	}
-	.detail-content {
-		font-size: 13px;
-	}
-	.social-logos{
-		display: none;
-	}
-	.photo-upload a{
-	width: 150px;
-	height: 150px;
-	}
-	.photo-upload img{
-	width: 150px;
-	height: 150px;
-	}
-	.slider-left {
-		width: 100%;
-		height: 350px;
-	}
-	.slider-right {
-		display: none
-	}
-	.slider-simple {
-		width: 100%;
-		height: 350px;
-	}
-}
 .breadcrumbs-section {
 	  padding: 30px 0;
 }
@@ -1392,6 +1269,130 @@ a.questions-date {
     text-align: right;
     position: absolute;
     top: 0;
+}
+@media (max-width:1199px){
+	#main {
+		width: 78%;
+		min-height: 0;
+	}
+	.profile-connect header h2{
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.profile-connect header h3{
+		font-size: 18px;
+		line-height: 18px;
+	}
+	#main.team-main {		
+		width: 100%;		
+	}
+}
+@media (min-width: 1200px) and (max-width: 1300px){		
+	#main.team-main {		
+		width: 53%;	
+	}
+}
+/*Mobile Version*/
+
+@media (max-width:768px){
+	#main {
+		width: 96%;
+		min-height: 0;
+	}
+	.profile-connect header h2{
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.profile-connect header h3{
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.profile-block {
+		margin: 0;
+	}
+	.top-nav li:hover ul{
+		display: none;
+	}
+	.slideshow img { max-width: 100%; height: 30px; padding: 0; margin: 0 12px; }
+	
+	.top-nav li:hover a.submenu{
+		border: 1px solid #fff;
+		background: #fff;
+		border-bottom-color: #fff;
+	}
+	.top-nav li a.submenu.active-submenu{
+		border: 1px solid #db0059;
+		border-bottom-color: #fff;
+		color: #333;
+	}
+	.top-nav li a {		
+		padding-bottom: 18px;		
+	}
+	.top-nav{
+		padding: 0 15px 0 0;
+		margin: 0;
+	}
+	.login-element.required::before{
+		display: inline-block;
+	}
+	.login-element::before{
+		display: none;
+	}
+	.login-element textarea {
+		/*margin-left: 60px;*/
+	}
+	.tabs-content-wrp .project-info {
+		font-size: 12px;
+	}
+	.tabs-content-wrp .project-info a:first-child{
+		margin-right: 6px;
+	}
+	.tabs-content-wrp h3 {
+		font-size: 13px;
+		min-height: 60px;
+		margin: 0 0 15px 0;
+	}
+	.page-tab-section .tab-menu li a{
+		font-size: 14px;
+	}
+	.content-section{
+		font-size: 14px;
+		clear: both;
+	}
+	.user-details{
+		margin: 10px 0;
+	}
+	.profile-img{
+		text-align: center;
+	}
+	.user-details h3 {
+		text-align: center;
+	}
+	.detail-content {
+		font-size: 13px;
+	}
+	.social-logos{
+		display: none;
+	}
+	.photo-upload a{
+	width: 150px;
+	height: 150px;
+	}
+	.photo-upload img{
+	width: 150px;
+	height: 150px;
+	}
+	.slider-left {
+		width: 100%;
+		height: 350px;
+	}
+	.slider-right {
+		display: none
+	}
+	.slider-simple {
+		width: 100%;
+		height: 350px;
+	}
 }
 
 @media (max-width:767px){
