@@ -35,11 +35,6 @@ button{
 .login{
     max-width: 50%;
 }
-/*body {
-   /*background: #fff url(../images/giddy-background.png) 50% 50%;
-    background-size: 100% 100%;
-
-}*/
 
 /* ==========================================================================
    Setting up the fonts
@@ -217,14 +212,15 @@ button{
 }
 
 .photo-upload a{
-	width: 250px;
-	height: 250px;
+	width: 175px;
+	height: 200px;
 	display: block;
 	margin: 0 auto;
 	text-align: center;
-	border-radius: 50%;
-	background: #ccc url(../images/icon-photo-upload.png) no-repeat center center;
-	line-height: 125px;
+	/*border-radius: 50%;*/
+	background: url(../images/add-photo.png) no-repeat center center;
+	background-size: cover;
+	line-height: 90px;
 	text-decoration: none !important;
 	color: #db0059;
 	
@@ -233,25 +229,29 @@ button{
 	color:  #fb4514;
 }
 .photo-upload a.hover{
-	background: #ff9e16 url(../images/icon-photo-upload.png) no-repeat center center;
+	background: url(../images/add-photo.png) no-repeat center center;
+	background-size: cover;
 	transform: scale(1.1);
 }
 
 .photo-upload img{
-	width: 250px;
-	height: 250px;
+	width: 175px;
+	height: 200px;
 	text-align: center;
-	border-radius: 50%;
-	line-height: 125px;
+	/*border-radius: 50%;*/
+	line-height: 150px;
 	object-fit: cover;
 }
 .photo-upload video{
-	width: 250px;
-	height: 250px;
+	width: 175px;
+	height: 200px;
 	text-align: center;
-	border-radius: 50%;
 	line-height: 125px;
 	object-fit: cover;
+}
+#photo input {
+	width: 175px;
+	height: 200px;
 }
 
 .dragover {
@@ -266,6 +266,7 @@ button{
 .profile-info h5{
 	padding: 20px 0 0 0;
     margin-left: 6em;
+    font-weight: bold;
 }
 .profile-info input[type="url"]{
 	border: 2px solid #ccc;
@@ -279,7 +280,7 @@ button{
 .user-login{
 	text-align: center;
 	width: 100%;
-    margin-top: 1em;
+	margin-top: 1em;
 }
 .required:before{
 	background: url(../images/icon-star.gif) no-repeat left top;
@@ -310,7 +311,11 @@ button{
 	padding: 10px 0 20px 8%;
 	text-align: left;
 }
-
+.login-element.normal input{
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	color: #000;
+}
 .login-element.required input{
 	border: 0;
 	border-bottom: 1px solid #ccc;
@@ -331,7 +336,6 @@ button{
 	width: 75%;
 	box-shadow: none !important;
 }
-
  .login-element.required.index{
     margin-left: 4.5em;
     margin-bottom: 2em;
@@ -416,8 +420,7 @@ button{
 }
 .btn-submit{
 	display: block;
-	width: 150px;
-	height: 30px;
+	width: 100px;
 	background: #ff571d;
 	line-height: 0px;
 	font-weight: 700;
@@ -433,10 +436,16 @@ button{
 	background-color: #ff9e16;
 }
 .btn-orange{
-	background-color: #ff571d;
+    background: #f1582c;
+    transform: skew(-42deg);
+    -webkit-transform: skew(-42deg);
+    -ms-transform: skew(-42deg);
 }
 .btn-orange:hover{
 	background-color: #ff9e16;
+	transform: skew(0);
+    -webkit-transform: skew(0);
+    -ms-transform: skew(0);
 }
 .btn-orange[disabled]:hover {
 	background-color: #ff9e16;
@@ -757,8 +766,8 @@ button{
 }
 @media (min-width: 1200px) and (max-width: 1300px){		
 	#main.team-main {		
-		width: 53%;		
-	}			
+		width: 53%;	
+	}
 }
 /*Mobile Version*/
 
@@ -905,7 +914,6 @@ button{
   border-right: solid 2px #f89728;
   display: block;
 }
-
 .user-iocn-profile .hexagon {
   margin: 12.99px 400px;
 }
@@ -1343,7 +1351,7 @@ a.questions-date {
 	color: #fff;
     display: block;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: bold;
     line-height: 14px;
     padding: 8px 3px;
 }
@@ -1720,10 +1728,6 @@ text-align: center;
 
 
 /*srinu*/
-.v1-banner{
-    background: url(../images/giddy-background.png);
-    background-size: 100% 100%;
-}
 .v1-banner #header {
 	border: 0;
 }
@@ -1774,6 +1778,7 @@ text-align: center;
 	margin-right: -10px;
 	z-index: 9;
 }
+
 
 .login-box-right {
 	margin-left: 55em;
@@ -2379,6 +2384,11 @@ footer {
 	text-align: left;
 	margin-right: 0;
 }
+/*.login-box.sort-menu-block .right-side {
+    margin-left: 100px;
+	text-align: left;
+	margin-right: 0;
+}*/
 .login-box.sort-menu-block:after {
 	display: none;
 }
@@ -2484,7 +2494,6 @@ footer {
   border-bottom: solid 2.8284px #e65a93;
   border-left: solid 2.8284px #e65a93;
 }
-
 
 .challenge-hexa-row2 ul {
 	padding-left: 149px;
