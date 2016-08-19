@@ -35,11 +35,6 @@ button{
 .login{
     max-width: 50%;
 }
-/*body {
-   /*background: #fff url(../images/giddy-background.png) 50% 50%;
-    background-size: 100% 100%;
-
-}*/
 
 /* ==========================================================================
    Setting up the fonts
@@ -217,14 +212,15 @@ button{
 }
 
 .photo-upload a{
-	width: 250px;
-	height: 250px;
+	width: 175px;
+	height: 200px;
 	display: block;
 	margin: 0 auto;
 	text-align: center;
-	border-radius: 50%;
-	background: #ccc url(../images/icon-photo-upload.png) no-repeat center center;
-	line-height: 125px;
+	/*border-radius: 50%;*/
+	background: url(../images/add-photo.png) no-repeat center center;
+	background-size: cover;
+	line-height: 90px;
 	text-decoration: none !important;
 	color: #db0059;
 	
@@ -233,25 +229,29 @@ button{
 	color:  #fb4514;
 }
 .photo-upload a.hover{
-	background: #ff9e16 url(../images/icon-photo-upload.png) no-repeat center center;
+	background: url(../images/add-photo.png) no-repeat center center;
+	background-size: cover;
 	transform: scale(1.1);
 }
 
 .photo-upload img{
-	width: 250px;
-	height: 250px;
+	width: 175px;
+	height: 200px;
 	text-align: center;
-	border-radius: 50%;
-	line-height: 125px;
+	/*border-radius: 50%;*/
+	line-height: 150px;
 	object-fit: cover;
 }
 .photo-upload video{
-	width: 250px;
-	height: 250px;
+	width: 175px;
+	height: 200px;
 	text-align: center;
-	border-radius: 50%;
 	line-height: 125px;
 	object-fit: cover;
+}
+#photo input {
+	width: 175px;
+	height: 200px;
 }
 
 .dragover {
@@ -266,6 +266,7 @@ button{
 .profile-info h5{
 	padding: 20px 0 0 0;
     margin-left: 6em;
+    font-weight: bold;
 }
 .profile-info input[type="url"]{
 	border: 2px solid #ccc;
@@ -279,7 +280,7 @@ button{
 .user-login{
 	text-align: center;
 	width: 100%;
-    margin-top: 1em;
+	margin-top: 1em;
 }
 .required:before{
 	background: url(../images/icon-star.gif) no-repeat left top;
@@ -310,7 +311,11 @@ button{
 	padding: 10px 0 20px 8%;
 	text-align: left;
 }
-
+.login-element.normal input{
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	color: #000;
+}
 .login-element.required input{
 	border: 0;
 	border-bottom: 1px solid #ccc;
@@ -331,7 +336,6 @@ button{
 	width: 75%;
 	box-shadow: none !important;
 }
-
  .login-element.required.index{
     margin-left: 4.5em;
     margin-bottom: 2em;
@@ -416,8 +420,7 @@ button{
 }
 .btn-submit{
 	display: block;
-	width: 150px;
-	height: 30px;
+	width: 100px;
 	background: #ff571d;
 	line-height: 0px;
 	font-weight: 700;
@@ -433,10 +436,16 @@ button{
 	background-color: #ff9e16;
 }
 .btn-orange{
-	background-color: #ff571d;
+    background: #f1582c;
+    transform: skew(-42deg);
+    -webkit-transform: skew(-42deg);
+    -ms-transform: skew(-42deg);
 }
 .btn-orange:hover{
 	background-color: #ff9e16;
+	transform: skew(0);
+    -webkit-transform: skew(0);
+    -ms-transform: skew(0);
 }
 .btn-orange[disabled]:hover {
 	background-color: #ff9e16;
@@ -738,130 +747,7 @@ button{
     margin: 30px auto;
 }
 
-@media (max-width:1199px){
-	#main {
-		width: 78%;
-		min-height: 0;
-	}
-	.profile-connect header h2{
-		font-size: 18px;
-		line-height: 18px;
-	}
-	.profile-connect header h3{
-		font-size: 18px;
-		line-height: 18px;
-	}
-	#main.team-main {		
-		width: 100%;		
-	}
-}
-@media (min-width: 1200px) and (max-width: 1300px){		
-	#main.team-main {		
-		width: 53%;		
-	}			
-}
-/*Mobile Version*/
 
-@media (max-width:768px){
-	#main {
-		width: 96%;
-		min-height: 0;
-	}
-	.profile-connect header h2{
-		font-size: 18px;
-		line-height: 18px;
-	}
-	.profile-connect header h3{
-		font-size: 18px;
-		line-height: 18px;
-	}
-	.profile-block {
-		margin: 0;
-	}
-	.top-nav li:hover ul{
-		display: none;
-	}
-	.slideshow img { max-width: 100%; height: 30px; padding: 0; margin: 0 12px; }
-	
-	.top-nav li:hover a.submenu{
-		border: 1px solid #fff;
-		background: #fff;
-		border-bottom-color: #fff;
-	}
-	.top-nav li a.submenu.active-submenu{
-		border: 1px solid #db0059;
-		border-bottom-color: #fff;
-		color: #333;
-	}
-	.top-nav li a {		
-		padding-bottom: 18px;		
-	}
-	.top-nav{
-		padding: 0 15px 0 0;
-		margin: 0;
-	}
-	.login-element.required::before{
-		display: inline-block;
-	}
-	.login-element::before{
-		display: none;
-	}
-	.login-element textarea {
-		/*margin-left: 60px;*/
-	}
-	.tabs-content-wrp .project-info {
-		font-size: 12px;
-	}
-	.tabs-content-wrp .project-info a:first-child{
-		margin-right: 6px;
-	}
-	.tabs-content-wrp h3 {
-		font-size: 13px;
-		min-height: 60px;
-		margin: 0 0 15px 0;
-	}
-	.page-tab-section .tab-menu li a{
-		font-size: 14px;
-	}
-	.content-section{
-		font-size: 14px;
-		clear: both;
-	}
-	.user-details{
-		margin: 10px 0;
-	}
-	.profile-img{
-		text-align: center;
-	}
-	.user-details h3 {
-		text-align: center;
-	}
-	.detail-content {
-		font-size: 13px;
-	}
-	.social-logos{
-		display: none;
-	}
-	.photo-upload a{
-	width: 150px;
-	height: 150px;
-	}
-	.photo-upload img{
-	width: 150px;
-	height: 150px;
-	}
-	.slider-left {
-		width: 100%;
-		height: 350px;
-	}
-	.slider-right {
-		display: none
-	}
-	.slider-simple {
-		width: 100%;
-		height: 350px;
-	}
-}
 .breadcrumbs-section {
 	  padding: 30px 0;
 }
@@ -905,7 +791,6 @@ button{
   border-right: solid 2px #f89728;
   display: block;
 }
-
 .user-iocn-profile .hexagon {
   margin: 12.99px 400px;
 }
@@ -1343,7 +1228,7 @@ a.questions-date {
 	color: #fff;
     display: block;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: bold;
     line-height: 14px;
     padding: 8px 3px;
 }
@@ -1384,6 +1269,130 @@ a.questions-date {
     text-align: right;
     position: absolute;
     top: 0;
+}
+@media (max-width:1199px){
+	#main {
+		width: 78%;
+		min-height: 0;
+	}
+	.profile-connect header h2{
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.profile-connect header h3{
+		font-size: 18px;
+		line-height: 18px;
+	}
+	#main.team-main {		
+		width: 100%;		
+	}
+}
+@media (min-width: 1200px) and (max-width: 1300px){		
+	#main.team-main {		
+		width: 53%;	
+	}
+}
+/*Mobile Version*/
+
+@media (max-width:768px){
+	#main {
+		width: 96%;
+		min-height: 0;
+	}
+	.profile-connect header h2{
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.profile-connect header h3{
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.profile-block {
+		margin: 0;
+	}
+	.top-nav li:hover ul{
+		display: none;
+	}
+	.slideshow img { max-width: 100%; height: 30px; padding: 0; margin: 0 12px; }
+	
+	.top-nav li:hover a.submenu{
+		border: 1px solid #fff;
+		background: #fff;
+		border-bottom-color: #fff;
+	}
+	.top-nav li a.submenu.active-submenu{
+		border: 1px solid #db0059;
+		border-bottom-color: #fff;
+		color: #333;
+	}
+	.top-nav li a {		
+		padding-bottom: 18px;		
+	}
+	.top-nav{
+		padding: 0 15px 0 0;
+		margin: 0;
+	}
+	.login-element.required::before{
+		display: inline-block;
+	}
+	.login-element::before{
+		display: none;
+	}
+	.login-element textarea {
+		/*margin-left: 60px;*/
+	}
+	.tabs-content-wrp .project-info {
+		font-size: 12px;
+	}
+	.tabs-content-wrp .project-info a:first-child{
+		margin-right: 6px;
+	}
+	.tabs-content-wrp h3 {
+		font-size: 13px;
+		min-height: 60px;
+		margin: 0 0 15px 0;
+	}
+	.page-tab-section .tab-menu li a{
+		font-size: 14px;
+	}
+	.content-section{
+		font-size: 14px;
+		clear: both;
+	}
+	.user-details{
+		margin: 10px 0;
+	}
+	.profile-img{
+		text-align: center;
+	}
+	.user-details h3 {
+		text-align: center;
+	}
+	.detail-content {
+		font-size: 13px;
+	}
+	.social-logos{
+		display: none;
+	}
+	.photo-upload a{
+	width: 150px;
+	height: 150px;
+	}
+	.photo-upload img{
+	width: 150px;
+	height: 150px;
+	}
+	.slider-left {
+		width: 100%;
+		height: 350px;
+	}
+	.slider-right {
+		display: none
+	}
+	.slider-simple {
+		width: 100%;
+		height: 350px;
+	}
 }
 
 @media (max-width:767px){
@@ -1720,10 +1729,6 @@ text-align: center;
 
 
 /*srinu*/
-.v1-banner{
-    background: url(../images/giddy-background.png);
-    background-size: 100% 100%;
-}
 .v1-banner #header {
 	border: 0;
 }
@@ -1774,6 +1779,7 @@ text-align: center;
 	margin-right: -10px;
 	z-index: 9;
 }
+
 
 .login-box-right {
 	margin-left: 55em;
@@ -2379,6 +2385,11 @@ footer {
 	text-align: left;
 	margin-right: 0;
 }
+/*.login-box.sort-menu-block .right-side {
+    margin-left: 100px;
+	text-align: left;
+	margin-right: 0;
+}*/
 .login-box.sort-menu-block:after {
 	display: none;
 }
@@ -2484,7 +2495,6 @@ footer {
   border-bottom: solid 2.8284px #e65a93;
   border-left: solid 2.8284px #e65a93;
 }
-
 
 .challenge-hexa-row2 ul {
 	padding-left: 149px;
@@ -3540,7 +3550,6 @@ a.more-btn:after {
 	}
 }
 
-
 .entry-left-block .entry-hexa-row1 figure {
 	margin: 56px 0 0;
 }
@@ -3883,4 +3892,51 @@ a.more-btn:after {
 	  padding-left: 20px;
 	  padding-right: 20px;
 	}
+}
+/*19-08-2016*/
+.team-hexa-entry-block .skew-text {
+	bottom: 12px;
+    left: -2px;
+    width: 44px;
+    height: 23px;
+    text-align: left;
+}
+.team-hexa-entry-block .skew-text span {
+	font-size: 8px;
+	padding: 0 1px;
+}
+.recent-question-block {
+	padding-top: 17px;
+}
+.tabs-content-wrp .recent-question-block h3 {
+	padding-bottom: 26px;
+}
+.tabs-content-wrp .recent-question-block p {
+	border-bottom: 0;
+	min-height: 1px;
+	padding:10px 0 0;
+	font-size: 15px;
+	line-height: 19px;
+}
+.tabs-content-wrp .recent-question-block p strong {
+	display: inline-block;
+	margin: 0 6px 0 0;
+	display: inline-block;
+	font-weight: 800;
+}
+.question-and-ans-block {
+	padding-bottom: 22px;
+	border-bottom: 1px solid #ccc;
+}
+.tabs-content-wrp .question-and-ans-block:last-child {
+	border-bottom: 0;
+}
+.tabs-content-wrp .question-and-ans-block h3 {
+	margin-bottom: 0;
+}
+.user-icon-8block {
+	margin-top: 0;
+}
+.question-2block .left-questionsblogs {
+	margin-top: -11px;
 }
