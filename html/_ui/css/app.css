@@ -3940,3 +3940,15 @@ a.more-btn:after {
 .question-2block .left-questionsblogs {
 	margin-top: -11px;
 }
+.hack-form-section .login-element input::-webkit-input-placeholder {
+   color: #000;
+}
+.hack-form-section .login-element input:-moz-placeholder { /* Firefox 18- */
+   color: #000;  
+}
+.hack-form-section .login-element input::-moz-placeholder {  /* Firefox 19+ */
+   color: #000;  
+}
+.hack-form-section .login-element input:-ms-input-placeholder {  
+   color: #000;  
+}
