@@ -212,7 +212,7 @@ button{
 }
 
 .photo-upload a{
-	width: 175px;
+	width: 173px;
 	height: 200px;
 	display: block;
 	margin: 0 auto;
@@ -235,7 +235,7 @@ button{
 }
 
 .photo-upload img{
-	width: 175px;
+	width: 173px;
 	height: 200px;
 	text-align: center;
 	/*border-radius: 50%;*/
@@ -243,14 +243,14 @@ button{
 	object-fit: cover;
 }
 .photo-upload video{
-	width: 175px;
+	width: 173px;
 	height: 200px;
 	text-align: center;
 	line-height: 125px;
 	object-fit: cover;
 }
 #photo input {
-	width: 175px;
+	width: 173px;
 	height: 200px;
 }
 
@@ -427,6 +427,9 @@ button{
 	color: #fff;
 	margin: 0 auto;
 }
+.btn-long{
+	width: 150px;
+}
 .btn-orange.hollow{
 	border: 1px solid #ff571d;
 	background-color: #fff;
@@ -452,9 +455,15 @@ button{
 }
 .btn-pinky{
 	background-color: #db0059;
+	transform: skew(-42deg);
+    -webkit-transform: skew(-42deg);
+    -ms-transform: skew(-42deg);
 }
 .btn-pinky:hover {
 	background-color: #ff571d;
+	transform: skew(0);
+    -webkit-transform: skew(0);
+    -ms-transform: skew(0);
 }
 .btn-pinky[disabled]:hover {
 	background-color: #ff9e16;
@@ -1375,11 +1384,11 @@ a.questions-date {
 		display: none;
 	}
 	.photo-upload a{
-	width: 150px;
+	width: 130px;
 	height: 150px;
 	}
 	.photo-upload img{
-	width: 150px;
+	width: 130px;
 	height: 150px;
 	}
 	.slider-left {
@@ -1394,7 +1403,6 @@ a.questions-date {
 		height: 350px;
 	}
 }
-
 @media (max-width:767px){
 	.tab-content2 {		
 		height: auto;		
@@ -1457,11 +1465,11 @@ a.questions-date {
 	width: 130px;
 	}
 	.photo-upload a{
-	width: 125px;
+	width: 109px;
 	height: 125px;
 	}
 	.photo-upload img{
-	width: 125px;
+	width: 109px;
 	height: 125px;
 	}
 	.about-image {
@@ -2179,6 +2187,12 @@ footer {
 	#header .columns.large-8 {
 		width : 75%;			
 	}
+	.profile-info, .social-logos{
+		display: none;
+	}
+	.photo-upload a{
+		font-size: 0;
+	}
 }
 @media (max-width: 979px) {
 	.v1-container {
@@ -2196,12 +2210,7 @@ footer {
 	.v1-hexa-row4-block  .m-hide {
 		display:none;	
 	}
-	.v1-hexa-row5-block .v1-hexa-box:last-child {
-		display:none;	
-	}
-	.v1-hexa-row5-block  .m-hide {
-		display:none;	
-	}
+
 	.earn-coins-block {
 		right:22%;
 	}
@@ -3550,6 +3559,7 @@ a.more-btn:after {
 	}
 }
 
+
 .entry-left-block .entry-hexa-row1 figure {
 	margin: 56px 0 0;
 }
@@ -3952,3 +3962,4 @@ a.more-btn:after {
 .hack-form-section .login-element input:-ms-input-placeholder {  
    color: #000;  
 }
+
