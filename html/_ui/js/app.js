@@ -32,7 +32,7 @@ $(".expand-social-links").click(function(){
 
 
 // Tabs
-$('.tab-content1').eq(0).css({'visibility':'visible','height':'auto'});
+$('.tab-content1').eq(0).css({'display':'block','visibility':'visible','height':'auto'});
 $('.tab-menu li a').click(function(e){
 	e.preventDefault();
 	var currentAttrValue = $(this).attr('href');
