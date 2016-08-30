@@ -4116,6 +4116,7 @@ a.more-btn:after {
 .react-autosuggest__suggestion--focused {
   background-color: #ddd;
 }
+<<<<<<< HEAD
 /*30-08-2016*/
 #tab7 .most-viewed-block {
 	position: relative;
@@ -4148,3 +4149,5 @@ a.more-btn:after {
 	width: 25%;
 }
 
+=======
+>>>>>>> 1c242248e19fadeb91d82c72feef9d4b5a3c05fa
