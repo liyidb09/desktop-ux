@@ -1509,6 +1509,9 @@ a.questions-date {
 		background: url('../images/bg.png');
 		float: left;
 	}
+    .v1-banner{
+    background: url('../images/giddy-background.png');
+    }
 	.v1-container {
 		width: 1024px;
 		margin: 0 auto;
