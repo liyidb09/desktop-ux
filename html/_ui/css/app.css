@@ -1697,8 +1697,8 @@ text-align: center;
 .v1-hexa-box .hexBottom:after {
   content: "";
   position: absolute;
-  width: 145.0000px;
-  height: 83.71578903249574px;
+  width: 150px;
+  height: 84px;
   -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-41.8579px);
   -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-41.8579px);
   transform:          rotate(45deg) scaleY(1.7321) translateY(-41.8579px);
@@ -4446,7 +4446,7 @@ a.more-btn:after {
 .react-autosuggest__suggestion--focused {
   background-color: #ddd;
 }
-<<<<<<< HEAD
+
 /*30-08-2016*/
 #tab7 .most-viewed-block {
 	position: relative;
