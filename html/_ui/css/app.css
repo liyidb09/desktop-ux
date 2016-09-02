@@ -1697,8 +1697,8 @@ text-align: center;
 .v1-hexa-box .hexBottom:after {
   content: "";
   position: absolute;
-  width: 145.0000px;
-  height: 83.71578903249574px;
+  width: 150px;
+  height: 84px;
   -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-41.8579px);
   -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-41.8579px);
   transform:          rotate(45deg) scaleY(1.7321) translateY(-41.8579px);
@@ -4446,7 +4446,6 @@ a.more-btn:after {
 .react-autosuggest__suggestion--focused {
   background-color: #ddd;
 }
-<<<<<<< HEAD
 /*30-08-2016*/
 #tab7 .most-viewed-block {
 	position: relative;
@@ -4560,3 +4559,82 @@ a.more-btn:after {
 .v1-hexa-box-3block .team-hexa .hexagon-bg-img.hex_1_4 {
 	background-image: url('../images/defaullt.jpg');
 }
+.f-left, .entry-hexa-row1 {
+	position: relative;
+}
+.hover-layer:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(144,3,4,0.8);
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	z-index: 5;
+}
+.hover-layer:hover:after {
+	display: block;
+	transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+.hover-layer:hover .skew-text {
+	transform: rotate(0deg) skew(0deg);
+	-webkit-transform: rotate(0deg) skew(0deg);
+}
+.hover-layer:hover .skew-text {
+	bottom: 0;
+	left: 0;
+}
+.over-lay-content {
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	padding: 5px 10px;
+	margin: 0;
+	font-size: 13px;
+	line-height: 17px;
+	color: #fff;
+	font-weight: 400;
+	transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 6;
+}
+.hover-layer:hover .over-lay-content {
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+}
+.hover-layer:hover .featured-text {
+	right: auto;
+	left: 5px;
+	transform: rotate(0deg);
+	transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+}
+/*.f-left .hover-layer .hexa-hover {
+	position: relative;
+	background: #000;
+}*/
+/*.f-left .hover-layer:hover .hexa-hover:after {
+	background: rgba(144,3,4,0.6);
+}
+.f-left .hover-layer:hover .hexa-hover {
+	background: rgba(144,3,4,0.6);
+}
+.f-left .hover-layer:hover .hexa-hover:before {
+	background: rgba(144,3,4,0.6);
+}
+.team-hexa-entry-block .hexa-hover .hexTop:after , .team-hexa-entry-block .hexa-hover .hexBottom::after{
+	background: rgba(144,3,4,0.6);
+}*/
