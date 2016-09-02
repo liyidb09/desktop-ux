@@ -743,16 +743,6 @@ button{
     width: 100%;
     overflow: hidden;
 }
-/*
-.slick-slide img
-{
-    display: inline-block !important;
-    position: relative;
-    z-index: 1;
-    max-width: 100%;
-    max-height: 100%;
-    vertical-align: middle;
-}*/
 
 .about-image {
     width: 100%;
@@ -2189,12 +2179,6 @@ footer {
 	top: auto;
 	right: 11px;
 }
-/*.team-hexa .team-member7 {
-	right: 8px;
-	bottom: -39px;
-	top: auto;
-	left: auto;
-}*/
 .team-wrapper .team-hexa .team-members.smallhex_1_1 .hexagon {
   background-image: url("../images/default_profile_photo.png");
 }
@@ -2580,9 +2564,6 @@ footer {
     right: -12px;
     transform: scale(0.7);
 }
-/*.four-img .team-members:first-child {
-    right: 11px;
-}*/
 .f-left {
     outline: medium none;
 }
@@ -2594,11 +2575,6 @@ footer {
 	text-align: left;
 	margin-right: 0;
 }
-/*.login-box.sort-menu-block .right-side {
-    margin-left: 100px;
-	text-align: left;
-	margin-right: 0;
-}*/
 .login-box.sort-menu-block:after {
 	display: none;
 }
@@ -4538,19 +4514,3 @@ div.ReactTags__suggestions ul li.active {
 	transition: all 0.4s ease-in-out 0s;
 	-webkit-transition: all 0.4s ease-in-out 0s;
 }
-/*.f-left .hover-layer .hexa-hover {
-	position: relative;
-	background: #000;
-}*/
-/*.f-left .hover-layer:hover .hexa-hover:after {
-	background: rgba(144,3,4,0.6);
-}
-.f-left .hover-layer:hover .hexa-hover {
-	background: rgba(144,3,4,0.6);
-}
-.f-left .hover-layer:hover .hexa-hover:before {
-	background: rgba(144,3,4,0.6);
-}
-.team-hexa-entry-block .hexa-hover .hexTop:after , .team-hexa-entry-block .hexa-hover .hexBottom::after{
-	background: rgba(144,3,4,0.6);
-}*/
