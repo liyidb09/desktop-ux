@@ -124,6 +124,29 @@ $(document).ready(function() {
           $('.right-block').removeAttr('style');
     }
 });
+	// hover funtion for hexagon
+	$( ".hover-layer" ).hover(
+	  function() {
+	    $( this ).find( ".hexagon" ).addClass( "hexa-hover" );
+	  }, function() {
+	    $( this ).find( ".hexagon" ).removeClass( "hexa-hover" );
+	  }
+	);
+
+	// animated method
+	$("#animate").click(function(e){
+	  e.preventDefault();
+    //$(".header-nav-menu").slideToggle();
+    $('.right-block').toggleClass("active");
+  	$('.login-box').toggleClass("active");
+    if($('.login-box').hasClass('active')){
+        $(".login-box").removeClass('fadeOutUp').addClass('fadeInDown');
+    }
+    else
+    {
+       $(".login-box").removeClass('fadeInDown').addClass('fadeOutUp');
+    }
+});
 });
 
 //single slider
