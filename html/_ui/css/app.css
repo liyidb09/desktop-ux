@@ -327,18 +327,26 @@ button{
 }
 .login-element span{
 	display: inline-block;
+	margin-top:5px;
 	padding: 5px;
 	color: #000;
 	width: 75%;
 	box-shadow: none !important;
 	text-align: left;
+	font-weight: 600;
+	font-size: 1rem;
 }
 .login-element textarea {
 	display: inline-block;
-	padding: 5px;
+	padding:5px;
 	color: #000;
 	width: 75%;
 	box-shadow: none !important;
+	border: 1px solid #ccc;
+}
+.login-element textarea:focus{
+	background: #fff;
+	border: 1px solid #cacaca;
 }
  .login-element.required.index{
     margin-left: 4.5em;
@@ -380,10 +388,12 @@ button{
 
 .feedback-element textarea{
 	display: inline-block;
-	padding: 5px;
 	color: #000;
 	width: 75%;
 	box-shadow: none !important;
+	padding-left: 1px;
+	font-weight: 600;
+	font-size:8px;
 }
 
 .feedback-element textarea {
@@ -470,23 +480,6 @@ button{
     -ms-transform: skew(0);
 }
 .btn-pinky[disabled]:hover {
-	background-color: #ff9e16;
-}
-.page-t.btn-orange.hollow{
-	border: 1px solid #ff571d;
-	background-color: #fff;
-	color:#ff571d;
-}
-.btn-orange.hollow:hover {
-	background-color: #ff9e16;
-}
-.btn-orange{
-	background-color: #ff571d;
-}
-.btn-orange:hover{
-	background-color: #ff9e16;
-}
-.btn-orange[disabled]:hover {
 	background-color: #ff9e16;
 }
 
@@ -2103,7 +2096,7 @@ footer {
   width: 149px; 
   height: 86.03px;
   background-color: #ffffff;
-  margin: 43.01px 1px;
+  margin: 43.01px 0;
   border-left: solid 2px #d90f5b;
   border-right: solid 2px #d90f5b;
 }
@@ -2251,7 +2244,7 @@ footer {
 }
 .earn-coins-block:hover {
 	opacity: 0.7;
-    transform: skew(0deg) rotate(0deg);
+	transform: skew(0deg) rotate(0deg);
 }
 .earn-coins-block a {
 	display: inline-block;
@@ -2565,6 +2558,7 @@ footer {
     right: -12px;
     transform: scale(0.7);
 }
+
 .f-left {
     outline: medium none;
 }
@@ -3345,6 +3339,10 @@ footer {
 	.entry-row-2 {
 	  margin: -42px 0 0 20px;
 	}
+	.entry-row-3 {
+		margin-left: 10px;
+		margin-top: -42px;
+	}
 	.project-title-block ul li a {
 		font-size: 10px;
 	}
@@ -3431,10 +3429,6 @@ footer {
 	}
 	.entry-row-2 {
 		margin-left: 37px;
-	}
-    .entry-row-3 {
-		margin-left: 10px;
-        margin-top: -42px;
 	}
 	.challenge-entry-content .medium-3, .challenge-entry-content .medium-6, .challenge-entry-content .medium-3 {
 		width: 100%;
@@ -3973,7 +3967,6 @@ a.more-btn:after {
 	padding-left: 1px;
 	font-weight: 600;
 	color: #000;
-	width: 89%;
 }
 .hack-form-section .login-element input[type="text"], .hack-form-section .login-element input[type="text"]::-moz-placeholder {
 	color: #000;
@@ -4217,6 +4210,12 @@ a.more-btn:after {
 	  padding-left: 30px;
 	  padding-right: 30px;
 	}
+	.login-element span,
+	.login-element textarea
+	{
+		width: 79%;
+		font-size: 0.6rem;
+	}
 
 }
 @media(max-width: 479px) {
@@ -4304,7 +4303,6 @@ div.ReactTags__selected span.ReactTags__tag {
   margin: 5px;
   cursor: move;
   border-radius: 2px;
-  float: left;
   width: inherit;
 }
 div.ReactTags__selected a.ReactTags__remove {
@@ -4317,6 +4315,8 @@ div.ReactTags__selected a.ReactTags__remove {
 div.ReactTags__selected a.ReactTags__remove:hover{
   color: #f1582c;
 }
+
+
 /* Styles for suggestions */
 div.ReactTags__suggestions {
   position: absolute;
@@ -4514,13 +4514,17 @@ div.ReactTags__suggestions ul li.active {
 	-webkit-transition: all 0.4s ease-in-out 0s;
 }
 .hover-layer:hover .featured-text {
+	top: 5px;
 	right: auto;
 	left: 5px;
 	transform: rotate(0deg);
 	transition: all 0.4s ease-in-out 0s;
 	-webkit-transition: all 0.4s ease-in-out 0s;
 }
-/*06-09-2016*/
+.hover-layer:hover .featured-text strong{
+	transform: rotate(0deg) skew(0deg);
+	-webkit-transform: rotate(0deg) skew(0deg);
+}
 .login-box.active {
 	display: block;
 }
@@ -4540,4 +4544,21 @@ div.ReactTags__suggestions ul li.active {
 	visibility: visible;
 	left: 0;
 	transition: all 0.5s ease-in-out;
+}
+.hover-layer:hover .featured-text .description {
+	color: #fff;
+}
+.upload-preview {
+	height: 200px;
+	margin-top: 10px;
+}
+.upload-preview img{
+	object-fit: contain;	
+	width: 100%;
+	height: 100%;
+}
+.upload-preview video{
+	object-fit: contain;	
+	width: 100%;
+	height: 100%;
 }
