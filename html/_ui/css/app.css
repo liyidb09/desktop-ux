@@ -2938,6 +2938,9 @@ footer {
 .entry-row-2 {
 	margin: -23px 0 0 6px;
 }
+.entry-row-3 {
+	margin: -23px 0 0 45px;
+}
 .team-hexa-entry-block2 .hexagon {
 	background-image: url('../images/john.jpg');
 }
@@ -3428,6 +3431,10 @@ footer {
 	}
 	.entry-row-2 {
 		margin-left: 37px;
+	}
+    .entry-row-3 {
+		margin-left: 10px;
+        margin-top: -42px;
 	}
 	.challenge-entry-content .medium-3, .challenge-entry-content .medium-6, .challenge-entry-content .medium-3 {
 		width: 100%;
