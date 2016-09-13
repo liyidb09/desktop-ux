@@ -1867,13 +1867,13 @@ text-align: center;
     position: absolute;
     width: 0;
 }
-.login-box,
+.login-box, 
 .right-hexas {
 	float: left;
 	display: inline-block;
 	position: relative;
 }
-.login-box,
+.login-box, 
 .login-box-right{
 	width: 280px;
 	height: 23px;
@@ -1922,6 +1922,140 @@ text-align: center;
     -o-transform: skew(60deg);
     transform: skew(60deg);
 }
+
+/****************** updated menu *****************/
+.right-block {
+	float: right;
+	margin: 15px 20px;
+}
+.right-hexa { 
+	background: #d90f5b none repeat scroll 0 0;
+    height: 25px;
+    position: relative;
+    width: 40px;
+    float: left;
+ } 
+.right-hexa:before { 
+	border-bottom: 11px solid #d90f5b;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: -10px;
+    width: 0; 
+} 
+.right-hexa:after { 
+	border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 11px solid #d90f5b;
+    bottom: -10px;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+}
+.menu-box, 
+.right-hexas {
+	float: left;
+	display: inline-block;
+	position: relative;
+}
+.menu-box, 
+.menu-box-right{
+	width: 280px;
+	height: 23px;
+	text-align: center;
+	margin-right: -300px;
+	z-index: 9;
+}
+
+
+.menu-box-right {
+	margin-left: 55em;
+}
+
+.menu-box ul{
+    margin-left: -500px;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -ms-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    transform: skew(-30deg);
+}
+.menu-box li {
+	display: inline;
+	font-size: 10px;
+	line-height: 14px;
+	font-weight: bold;
+    padding: 2.5px;
+  
+}
+
+.menu-projects a{
+	color: orange;
+}
+
+.menu-teams a{
+	color: hotpink;
+}
+
+.menu-members a{
+	color: gold;
+}
+
+.menu-skills a{
+	color: red;
+}
+
+.menu-howItWorks a{
+	color: black;
+}
+
+.menu-box::after {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid red;
+    content: "";
+    display: inline-block;
+    height: 25px;
+    left: 0;
+    margin: 0 auto;
+    margin-right: 250px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 290px;
+    z-index: -1;
+    -webkit-transform: skew(60deg);
+    -moz-transform: skew(60deg);
+    -ms-transform: skew(60deg);
+    -o-transform: skew(60deg);
+    transform: skew(60deg);
+}
+
+.menu-box.active {
+	display: block;
+}
+
+.right-hexa {
+	cursor: pointer;
+}
+.right-block.active #animate a {
+	font-size: 0;
+}
+.menu-box {
+	display: block;
+	transition: all 0.5s ease-in-out;
+	visibility: hidden;
+}
+.menu-box.active {
+	visibility: visible;
+	left: 0;
+	transition: all 0.5s ease-in-out;
+}
+
 .right-hexa a {
 	position: absolute;
 	text-transform: uppercase;
