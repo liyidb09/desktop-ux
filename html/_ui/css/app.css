@@ -1320,6 +1320,8 @@ a.questions-date {
     -o-transform: rotate(30deg) skew(31deg);
     width: 104px;
     z-index: 9;
+    transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
 }
 .skew-text span {
 	color: #fff;
@@ -1760,6 +1762,8 @@ text-align: center;
   transform: rotate(29deg);
   -webkit-transform: rotate(29deg);
   z-index: 9;
+  transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
 }
 .featured-text strong {
   color: #fff;
@@ -2265,7 +2269,6 @@ footer {
 .earn-coins-block a:hover {
 	text-decoration: none;
 }
-
 .sub-skew-block {
     background: #fc2330 none repeat scroll 0 0;
     bottom: -10px;
@@ -2279,6 +2282,8 @@ footer {
     -o-transform: skew(16deg, 22deg) rotate(14deg);
     width: 41px;
     text-align: center;
+    transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
 }
 .sub-skew-right-block {
     bottom: -11px;
@@ -4460,28 +4465,6 @@ div.ReactTags__suggestions ul li.active {
 .f-left, .entry-hexa-row1 {
 	position: relative;
 }
-.hover-layer:after {
-	content: "";
-	display: inline-block;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(144,3,4,0.8);
-	transform: scale(0);
-	-webkit-transform: scale(0);
-	transition: all 0.5s ease-in-out 0s;
-	-webkit-transition: all 0.5s ease-in-out 0s;
-	z-index: 5;
-}
-.hover-layer:hover:after {
-	display: block;
-	transition: all 0.5s ease-in-out 0s;
-	-webkit-transition: all 0.5s ease-in-out 0s;
-	transform: scale(1);
-	-webkit-transform: scale(1);
-}
 .hover-layer:hover .skew-text {
 	transform: rotate(0deg) skew(0deg);
 	-webkit-transform: rotate(0deg) skew(0deg);
@@ -4531,7 +4514,6 @@ div.ReactTags__suggestions ul li.active {
 	font-size: 0;
 }
 .login-box {
-	left: 280px;
 	display: block;
 	transition: all 0.5s ease-in-out;
 	visibility: hidden;
@@ -4540,4 +4522,52 @@ div.ReactTags__suggestions ul li.active {
 	visibility: visible;
 	left: 0;
 	transition: all 0.5s ease-in-out;
+}
+/*9-9-2016*/
+.sub-skew-block.active-animate {
+	transform: none;
+	bottom: -20px;
+	left: 35px;
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+}
+.sub-skew-block.sub-skew-right-block-2.active-animate {
+	right: 34px;
+}
+.sub-skew-block.block-2-2.active-animate, .sub-skew-block.sub-skew-right-block-2.active-animate {
+	bottom: -45px;
+}
+.sub-skew-right-block.active-animate, .sub-skew-block.sub-skew-right-block-2.active-animate {
+	left: auto;
+}
+.v1-hexa-box .skew-text-animate.skew-text, .skew-text-animate.skew-text {
+	width: 100%;
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+}
+.hexagon, .hexagon.hexa-hover {
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.hover-layer:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	z-index: 5;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+}
+.hover-layer:hover:after {
+	background: rgba(144,3,4,0.8);
+	display: block;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease-in-out 0s;
 }

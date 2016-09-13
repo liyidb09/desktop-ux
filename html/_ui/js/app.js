@@ -128,10 +128,21 @@ $(document).ready(function() {
 	$( ".hover-layer" ).hover(
 	  function() {
 	    $( this ).find( ".hexagon" ).addClass( "hexa-hover" );
+	    $( this ).find( ".skew-text" ).addClass( "skew-text-animate" );
+	    $( this ).nextAll( ".sub-skew-block" ).addClass( "active-animate" );
 	  }, function() {
 	    $( this ).find( ".hexagon" ).removeClass( "hexa-hover" );
+	    $( this ).find( ".skew-text" ).removeClass( "skew-text-animate" );
+	    $( this ).nextAll( ".sub-skew-block" ).removeClass( "active-animate" );
 	  }
 	);
+	// $( ".v1-hexa-box" ).hover(
+	//   function() {
+	//     $( this ).addClass( "hexa-box-hover" );
+	//   }, function() {
+	//     $( this ).removeClass( "hexa-box-hover" );
+	//   }
+	// );
 
 	// animated method
 	$("#animate").click(function(e){
