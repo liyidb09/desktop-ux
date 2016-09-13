@@ -157,8 +157,23 @@ $(document).ready(function() {
     {
        $(".login-box").removeClass('fadeInDown').addClass('fadeOutUp');
     }
-});
-});
+ });
+    
+    $("#animate-menu").click(function(e){
+	  e.preventDefault();
+    //$(".header-nav-menu").slideToggle();
+    $('.right-block').toggleClass("active");
+  	$('.menu-box').toggleClass("active");
+    if($('.menu-box').hasClass('active')){
+        $(".menu-box").removeClass('fadeOutUp').addClass('fadeInDown');
+    }
+    else
+    {
+       $(".menu-box").removeClass('fadeInDown').addClass('fadeOutUp');
+    }
+ });
+    
+});//end document.ready
 
 //single slider
 $('.single-item-slide-block').slick();
