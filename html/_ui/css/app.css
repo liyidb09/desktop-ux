@@ -49,6 +49,13 @@ button{
 	padding: 8px 0 2px 0;
 	/*border-bottom: 2px solid #ff9e16;*/
 }
+
+/* hexagon background*/
+.hex-background{
+    background-image: url("../images/giddy-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .top-nav{
 	float: right;
 	padding: 8px 0 0 0;
@@ -1537,6 +1544,12 @@ a.questions-date {
 	}
 }
 @media (max-width:479px){
+    .user-iocn-profile .hexagon {
+    margin: 10px 100px;
+    }
+    .columns .small-12{
+        margin-right: -100px;
+    }
 	.team-section .page-tab-section .multi-tab-section .tab-menu2 li a:hover, 
 	.team-section .page-tab-section .multi-tab-section .tab-menu2 li.active-tab a {
 		font-size: 8px;
@@ -1619,9 +1632,12 @@ a.questions-date {
     line-height: 20px;
     transform: rotate(-29deg);
     -webkit-transform: rotate(-29deg);
+     transform: skewY(-30deg);
+    -webkit-transform: skewY(-30deg);
+	-ms-transform: skewY(-30deg);
     position: relative;
     margin: 68px -7px 0 0;
-    width: 95px;
+    width: 105px;
     text-align: center;
 }
 .v1-hexagon-block h3.challenges{		
@@ -2069,6 +2085,9 @@ text-align: center;
 	-ms-transform: rotate(-30deg);
 	-o-transform: rotate(-30deg);
 	transform: rotate(-30deg);
+    transform: skewY(-30deg);
+    -webkit-transform: skewY(-30deg);
+	-ms-transform: skewY(-30deg);
 }
 .right-hexa a:hover {
 	text-decoration:none;	
@@ -2388,7 +2407,6 @@ footer {
 	width: 57px;
 }
 .earn-coins-block:hover {
-	opacity: 0.7;
     transform: skew(0deg) rotate(0deg);
 }
 .earn-coins-block a {
@@ -2513,7 +2531,7 @@ footer {
 .slider-v1screen .slick-next:hover:after {
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
-	color: #000;
+	color: yellow;
 }
 
 .earn-points-block {
@@ -2572,6 +2590,12 @@ footer {
 	
 }
 @media (max-width: 767px) {
+     .user-iocn-profile .hexagon {
+    margin: 10px 100px;
+    }
+    .columns .small-12{
+        margin-right: -100px;
+    }
 	.v1-container {
 		width:100%;
 		padding: 0 13px;	
@@ -3938,6 +3962,9 @@ a.more-btn:after {
 	}
 }
 @media (max-width: 767px) {
+  .user-iocn-profile{ 
+        margin-left: 0px;
+    }
 	.page-tab-section .multi-future-tab-section .tab-menu2 li a, .page-tab-section .future-tab-section .tab-menu li a {
 	  font-size: 8px;
 	}
